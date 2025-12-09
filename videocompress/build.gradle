@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
+    resourcePrefix "videoCompress_"
+
+    defaultConfig {
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+
+        ndk {
+            moduleName "compress"
+            abiFilters 'x86', 'armeabi-v7a', 'armeabi'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        applicationVariants {
+        }
+    }
+
+    sourceSets.main {
+        jniLibs.srcDir 'libs'
+        jni.srcDirs = [] //disable automatic ndk-build call
+//        jni.srcDir 'src/main/jni'
+    }
+/*
+    externalNativeBuild {
+        cmake {
+            path 'CMakeLists.txt'
+        }
+    }
+*/
+/*
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+*/
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:${project.ext.supportLibVersion}"
+}
