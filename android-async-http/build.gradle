@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+
+    lintOptions {
+        xmlReport false
+        warningsAsErrors true
+        quiet false
+        showAll true
+        disable 'OldTargetApi', 'LongLogTag'
+        // TODO: long log tag should be fixed instead of ignored
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        applicationVariants {
+        }
+    }
+}
+android.libraryVariants.all { variant ->
+    def name = variant.buildType.name
+    def task = project.tasks.create "jar${name.capitalize()}", Jar
+    task.dependsOn variant.javaCompile
+    task.from variant.javaCompile.destinationDir
+    artifacts.add('archives', task);
+}
+
+dependencies {
+    compileOnly files('libs/httpcore-4.1.2.jar')
+    compileOnly files('libs/httpclient-4.1.2.jar')
+}
