@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- General: Names -->
+    <string name="app_name">MMC</string>
+    <string name="app_version">1.0.0</string>
+    <string name="im_label">MMC</string>
+    <string name="notification_title">MMC</string>
+    <string name="desc_image">Image</string>
+    <string name="title_contacts">Contact</string>
+    <string name="copyright_desc">ChonHa 2025</string>
+    <string name="app_publish_id">This software is guarded by the law.     ㄱ-12345678</string>
+    <string name="version_update">update</string>
+
+    <string name="ok">ok</string>
+    <string name="select_friends_title">select friend</string>
+    <string name="chat_room_send_text">send text…</string>
+    <string name="chatid_hint">Id should be 6~20 and be consisted of english, letter, underline(_) and started by english letter.</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_chat_list">Chat List</string>
+    <string name="title_my_info">My info</string>
+    <string name="title_settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="my_profile">My profile</string>
+    <string name="chat_search">Search content</string>
+    <string name="qrcode_scan">Read QR</string>
+    <string name="delete">Delete</string>
+    <string name="camera">Camera</string>
+    <string name="photo_camera">Photo</string>
+    <string name="choose_fileselect">Select file</string>
+    <string name="delete_warning">can not delete contact</string>
+    <string name="confirm_out_room">《%s》want to go out?</string>
+    <string name="str_leave">Leave</string>
+    <string name="send">Send</string>
+    <string name="confirm_accept">《%s》Want to accept request?</string>
+    <string name="confirm_decline">《%s》Want to reject request?</string>
+    <string name="confirm_cancel">《%s》Want to cancel request?</string>
+    <string name="contact_joined"><xliff:g id="user">%1$s</xliff:g>User joined.</string>
+    <string name="contact_left"><xliff:g id="user">%1$s</xliff:g>User left.</string>
+    <string name="contact_online"><xliff:g id="user">%1$s</xliff:g>User signed in.</string>
+    <string name="contact_offline"><xliff:g id="user">%1$s</xliff:g>User signed out.</string>
+    <string name="contact_away"><xliff:g id="user">%1$s</xliff:g>Away</string>
+    <string name="contact_busy"><xliff:g id="user">%1$s</xliff:g>Busy</string>
+    <string name="mic_discription">Keep touching</string>
+    <string name="error_voice_length_short">Too short record duration.</string>
+    <string name="cannot_use_storage">Can not use storage.</string>
+    <string name="draft_remove">Message draft will be discarded</string>
+    <string name="save_path">Phone Storage/Download/MMC</string>
+    <string name="file_choose_limit">Can not select more than 9 files</string>
+    <string name="error_file_type">Incorrect file type</string>
+    <string name="no_chat">No chat history.</string>
+    <string name="chat_menu_copy_msg">Copy</string>
+    <string name="chat_menu_resend">Resend</string>
+    <string name="title_myprofile">My profile</string>
+    <string name="confirm">Confirm</string>
+    <string name="password_confirm">Password Confirmation</string>
+    <string name="accept_invitation">Accept invitation</string>
+    <string name="decline_invitation">Reject invitation</string>
+    <string name="title_server_error">Server error</string>
+    <string name="content_server_error">App should be restarted.</string>
+    <string name="input_password">Invalid password.</string>
+    <string name="content_loginError">Login error.</string>
+    <string name="content_connectError">Connect error.</string>
+    <string name="help">Help</string>
+    <string name="search">Search</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="signup">sign up</string>
+    <string name="setting">settings</string>
+    <string name="setting_title_log_out">Sign out</string>
+    <string name="subscription_notify_text"><xliff:g id="user">%s</xliff:g>Add contact from user</string>
+    <string name="unsubscription_notify_text"><xliff:g id="user">%s</xliff:g>You were deleted from the user.</string>
+    <string name="subscription_decline_notify_text"><xliff:g id="user">%s</xliff:g>Your invitation was rejected.</string>
+    <string name="subscription_cancel_notify_text"> \"<xliff:g id="user">%s</xliff:g>\"Your invitation was cancelled.</string>
+    <string name="subscription_approved_notify_text"> \"<xliff:g id="user">%s</xliff:g>\"Your invitation was accepted.</string>
+    <string name="notify_groupchat_label">GroupChat</string>
+    <string name="group_chat_invite_notify_text"><xliff:g id="user">%s</xliff:g>Request is received.</string>
+    <string name="status_bar_sent_image">Image</string>
+    <string name="status_bar_sent_audio">Audio</string>
+    <string name="status_bar_sent_video">Video</string>
+    <string name="status_bar_sent_file">File</string>
+    <string name="status_bar_str_group_chat">Group Chat</string>
+    <string name="error">Error</string>
+    <string name="select_contact">Select contact.</string>
+    <string name="group_chat_limit">Cannot select more than 9 users.</string>
+    <string name="network_error">Network error.</string>
+    <string name="not_signed_in">Signin failed.</string>
+    <string name="unknown_file_format">Not supported file type.</string>
+    <string name="loading">Loading…</string>
+    <string name="provider_full_name_xmpp">Message send limit</string>
+    <string name="signed_out_prompt_with_error">Signout error</string>
+    <string name="friend_requests_title">Received request</string>
+    <string name="friend_requests_title_receive">received requests</string>
+    <string name="friend_requests_title_sent">sent requests</string>
+    <string name="friend_requests_no_received_friends">no received requests</string>
+    <string name="friend_requests_no_sent_friends">no sent requests.</string>
+    <string name="friend_find_by_id_or_name_title">find by id or name</string>
+    <string name="friend_find_title">find chat by id or phone</string>
+    <string name="friend_find_by_id_or_name_finding_friends">Searching friends…</string>
+    <string name="friend_list_edit_no_friends">No friends</string>
+    <string name="chat_list_picatalk_team_name">Manager</string>
+    <string name="logout_confirm">Confirm leaving chat room?</string>
+    <string name="logout_logout_btn_text">Sign out</string>
+    <string name="logout_message_wait_for_logging_out">Signing out…</string>
+    <string name="images_and_videos">Image and Video</string>
+    <string name="str_add_friend">Add new contact</string>
+    <string name="msg_for_find_friends_failure">Not found user</string>
+    <string name="event_name">Name</string>
+    <string name="not_sent">Send failed</string>
+    <string name="inReady">Ready…</string>
+    <string name="inProgress">In progress…</string>
+    <string name="inCompress">In compress…</string>
+    <string name="invite_voice_call">Incoming voice call…</string>
+    <string name="waiting_for_response">Waiting for response…</string>
+    <string name="button_done">Save</string>
+    <string name="passwords_not_match">Passwords do not match.</string>
+    <string name="passwords_length_not_enough">Password length should be 6~20</string>
+    <string name="error_call_declined">Call declined</string>
+    <string name="error_user_not_found">User not found</string>
+    <string name="audio_call">Audio call</string>
+    <string name="video_call">Video call</string>
+    <string name="invite_video_call">Invite video call…</string>
+    <string name="service_name">MMC</string>
+    <string name="incall_notif_active">Calling…</string>
+    <string name="incall_notif_paused">Holding…</string>
+    <string name="incall_notif_audio">Busy Audio…</string>
+    <string name="incall_notif_video">Busy Video…</string>
+    <string name="couldnt_accept_call">Accept call</string>
+    <string name="register">Register</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="unknown_incoming_call_name">Unregistered user</string>
+
+    <string name="no_contact_to_add">No contact to add.</string>
+    <string name="no_tag">No tag.</string>
+    <string name="delete_contact">Delete contact</string>
+    <string name="phone_number">Phone number</string>
+    <string name="phone_number_hint">1911234567</string>
+    <string name="error_unknown">Call failed</string>
+    <string name="error_incompatible_media">Incompatible media</string>
+    <string name="error_low_bandwidth">Low bandwidth.</string>
+    <string name="error_network_unreachable">Network unreachable.</string>
+    <string name="error_bad_credentials">bad credential.</string>
+    <string name="error_unauthorized">unauthorized.</string>
+    <string name="error_io_error">network error.</string>
+    <string name="unread_messages">%i unread messages</string>
+    <string name="select">select</string>
+    <string name="create_filse_send">files</string>
+    <string name="tab_label_image">image</string>
+    <string name="tab_label_video">video</string>
+    <string name="tab_label_audio">audio</string>
+    <string name="tab_label_file">file</string>
+    <string name="declined">declined</string>
+    <string name="cancelled">cancelled</string>
+    <string name="duration">duration</string>
+    <string name="not_accept">not accept</string>
+    <string name="no_answer">no answer</string>
+    <string name="busy">busy…</string>
+    <string name="call_failure">call failure</string>
+    <string name="delete_conversation">delete conversation</string>
+    <string name="change_group_name">change group name</string>
+    <string name="title_add_contacts">add contact</string>
+    <string name="tags">tags</string>
+    <string name="search_contact">search contact</string>
+    <string name="mobile_contacts">mobile contacts</string>
+    <string name="add_from_mobile_address_book">add from mobile contacts</string>
+    <string name="all_tags">all tags</string>
+    <string name="new_tag">new tag</string>
+    <string name="tag_name">tag name</string>
+    <string name="members">members</string>
+    <string name="edit_tag">edit</string>
+    <string name="tag_remove">tag remove.</string>
+    <string name="about">about</string>
+    <string name="no">no</string>
+    <string name="yes">yes</string>
+    <string name="call_paused_by_remote">call is paused by remote.</string>
+    <string name="reset">reset</string>
+    <string name="delete_contact_msg">delete this contact?</string>
+    <string name="add">add</string>
+    <string name="send_a_friend_request_first">request friend</string>
+    <string name="friend_request">friend request</string>
+    <string name="write_greeting">write greeting…</string>
+    <string name="get_profile_error">get profile error.</string>
+    <string name="save_this_change">save this change?</string>
+    <string name="don_t_save">no</string>
+    <string name="tag_already_exist">tag already exists.</string>
+    <string name="delete_tag">delete tag</string>
+    <string name="delete_tag_description">want to delete tag?</string>
+    <string name="new_chat">new chat</string>
+    <string name="add_contacts_id_number">add contact by id</string>
+    <string name="title_friend_profile">profile</string>
+    <string name="myprofile_str_change_picture">profile picture</string>
+    <string name="choose_profilephoto">choose photo</string>
+    <string name="new_photo_camera">take photo</string>
+    <string name="message_view_audio">audio</string>
+    <string name="waiting_capture">waiting capture…</string>
+    <string name="waiting_convert">waiting convert…</string>
+    <string name="str_minute">min</string>
+    <string name="str_second">sec</string>
+    <string name="selected_file">selected file</string>
+    <string name="missed_call_title">missed call</string>
+    <string name="connecting_to_mobilecom">connecting to mobile.</string>
+    <string name="cant_connect_to_server">can not connect to server.</string>
+    <string name="cant_connect_to_xmpp_server">can not connect to xmpp server.</string>
+    <string name="cant_connect_to_sip_server">can not connect to sip server.</string>
+    <string name="status_dialog_title">connection status</string>
+    <string name="file_manager_main">main</string>
+    <string name="file_manager_primary">phone storage</string>
+    <string name="file_manager_total">total capacity</string>
+    <string name="file_manager_available">available capacity</string>
+    <string name="information">info</string>
+    <string name="error_file_no_exist">file not exists.</string>
+    <string name="file_upload_cancelled">cancelled</string>
+    <string name="file_upload_stopped">stopped</string>
+    <string name="delete_chat_room">delete chat room?</string>
+    <string name="delete_message">delete selected message?</string>
+    <string name="delete_messages">delete selected messages?</string>
+    <string name="overload_text_string">text length limited.</string>
+    <string name="no_search_result">not search result</string>
+    <string name="disable_call_in_uploading">can not call while uploading.</string>
+    <string name="disable_call_in_downloading">can not call while downloading.</string>
+    <string name="disable_use_camera_in_calling">cannot call in calling.</string>
+    <string name="disable_use_recorder_in_calling">can not use recorder in calling.</string>
+    <string name="disable_ps_call">can not call.</string>
+    <string name="disable_call">disable call.</string>
+    <string name="disable_uploading_in_calling">can not upload in calling.</string>
+    <string name="disable_logout_in_calling">can not logout in calling.</string>
+    <string name="file_copy_confirm">input file name.</string>
+    <string name="file_head_image">image</string>
+    <string name="file_head_video">video</string>
+    <string name="file_head_audio">audio</string>
+    <string name="input_file_name">input file name.</string>
+    <string name="file_no_exist">file not exists.</string>
+    <string name="file_copy_success">file copy success.\n</string>
+    <string name="show_property">show property</string>
+    <string name="send_time">send: </string>
+    <string name="received_time">received: </string>
+    <string name="call_start_time">start time: </string>
+    <string name="call_end_time">end time: </string>
+    <string name="file_size">file sie: </string>
+    <string name="videocall_time">call time: </string>
+    <string name="videocall_state">call result: </string>
+    <string name="group_name">group name</string>
+    <string name="group_leave_error">can not leave group</string>
+    <string name="group_list">user list</string>
+    <string name="input_group_name">input group name</string>
+    <string name="group_left">leave</string>
+    <string name="user_">user </string>
+    <string name="you_and">you and</string>
+    <string name="to_user">to user</string>
+    <string name="to_you">to you</string>
+    <string name="sent_request_for_group_chat">sent request for group chat.</string>
+    <string name="birth_number">CitizenNum</string>
+    <string name="change_account">already existing id.</string>
+    <string name="unable_to_create_or_join_group_chat">create or join group chat.</string>
+    <string name="already_received_friend_request">received friend request.</string>
+    <string name="full_image">full image</string>
+    <string name="preview">preview</string>
+    <string name="choose_photo">choose photo</string>
+    <string name="images">choose image</string>
+    <string name="str_done">done</string>
+    <string name="tap_to_turn_light_on">turn light on.</string>
+    <string name="qr_code_align">let qrcode inside</string>
+    <string name="tap_to_turn_light_off">turn light off.</string>
+    <string name="qr_code_not_found">qr not found.</string>
+    <string name="alert">alert</string>
+    <string name="warning">warning</string>
+    <string name="msg_camera_framework_bug">camera error.</string>
+    <string name="scan_qr_code_to_add_me">scan QR code to add</string>
+    <string name="str_my_qrcode">my QR code</string>
+    <string name="str_friend_qrcode">friend qr code</string>
+    <string name="save_to_phone">save to phone</string>
+    <string name="save_photo_success">save photo success.</string>
+    <string name="save_photo_failed">save photo failed</string>
+    <string name="scan_contact_s_qr_code">scan contact qr code</string>
+    <string name="AllPhotos">all photos</string>
+    <string name="AllVideos">all videos</string>
+    <string name="sign_up_start">sign up start</string>
+    <string name="password_next">next</string>
+    <string name="user_name">user name</string>
+    <string name="user_id">user id</string>
+    <string name="sign_up">sign up</string>
+    <string name="sign_up_title_phone_number">phone number</string>
+    <string name="sign_up_title_password">password</string>
+    <string name="sign_up_title_user_info">user info</string>
+    <string name="profile">profile</string>
+    <string name="enter_current_password">enter current password.</string>
+    <string name="change_pwd_desc">change password.</string>
+    <string name="current_password">current password</string>
+    <string name="new_password">new password</string>
+    <string name="password_change">password change</string>
+    <string name="set_pwd">set password</string>
+    <string name="search_chat">search chat</string>
+    <string name="app_info">program info</string>
+    <string name="logout_desc">leave group chat</string>
+    <string name="title_search_chat_history">search chat history</string>
+    <string name="register_id">register id:</string>
+    <string name="check_user_info">check user info</string>
+    <string name="check_user_info_desc">check user info.</string>
+    <string name="input_birth_num">input citizen num</string>
+    <string name="error_message_failed_check_user_info_title">failed checking user info</string>
+    <string name="error_message_failed_check_user_info">failed checking user info</string>
+    <string name="success_check_user_info">checked user info.</string>
+
+    <string name="decline_incoming_call">decline</string>
+    <string name="accept_incoming_call">accept</string>
+    <string name="speaker_outgoing">speaker</string>
+    <string name="mute_outgoing">mute</string>
+    <string name="switch_camera">switch camera</string>
+    <string name="to_voice_call">to voice call</string>
+    <string name="tags_list_all">(all)</string>
+
+    <string name="help_index">index</string>
+    <string name="help_index_1">1 about</string>
+    <string name="help_index_2">2 registration and login</string>
+    <string name="help_index_2_1">2.1 registration</string>
+    <string name="help_index_2_2">2.2 sign in</string>
+    <string name="help_index_3">3 chat</string>
+    <string name="help_index_3_1">3.1 chat list</string>
+    <string name="help_index_3_2">3.2 chat function</string>
+    <string name="help_index_3_2_1">3.2.1 text message</string>
+    <string name="help_index_3_2_2">3.2.2 voice record</string>
+    <string name="help_index_3_2_3">3.2.3 voice call</string>
+    <string name="help_index_3_2_4">3.2.4 video call</string>
+    <string name="help_index_3_2_5">3.2.5 file transfer</string>
+    <string name="help_index_3_3">3.3 delete chat</string>
+    <string name="help_index_3_4">3.4 search for chat</string>
+    <string name="help_index_3_5">3.5 group chat</string>
+    <string name="help_index_4">4 contact</string>
+    <string name="help_index_4_1">4.1 add contact</string>
+    <string name="help_index_4_1_1">4.1.1 handle request</string>
+    <string name="help_index_4_1_2">4.1.2 add address</string>
+    <string name="help_index_4_2">4.2 address info</string>
+    <string name="help_index_4_3">4.3 delete address</string>
+    <string name="help_index_5">5 setting</string>
+    <string name="help_index_5_1">5.1 my profile</string>
+    <string name="help_index_5_2">5.2 about program</string>
+    <string name="help_index_5_3">5.3 help</string>
+    <string name="help_index_6">6 sign out</string>
+
+    <string name="save_login_info">save login info</string>
+    <string name="record_description">message will be sent when you touch up.</string>
+    <string name="password_friend">password friend</string>
+    <string name="select_pwd_friend_title">select address</string>
+
+    <string name="chat_more_voice_call">voice call</string>
+    <string name="chat_more_video_call">video call</string>
+    <string name="chat_more_camera">camera transfer</string>
+    <string name="chat_more_file">file transfer</string>
+    <string name="chat_more_setting">chat setting</string>
+    <string name="chat_more_select">select</string>
+    <string name="chat_more_help">help</string>
+    <string name="chat_more_leave">leaving chat</string>
+    <string name="network_connected">network connected</string>
+    <string name="network_disconnected">network disconnected</string>
+    <string name="network_inprogress">network in progress</string>
+    <string name="forgot_password">forget password?</string>
+    <string name="sorry_we_cannot_play_this_audio_file">can not play this audio file.</string>
+    <string name="logout">log out</string>
+    <string name="out">out</string>
+    <string name="forgot_pwd_desc">reset password.</string>
+    <string name="verify_code">verify code</string>
+    <string name="request_verify_code">request verify code</string>
+    <string name="input_verify_code">input verify code.</string>
+    <string name="password_recovery">password recovery</string>
+    <string name="api_server_ip">api server ip</string>
+    <string name="sip_server_ip">SIP server ip</string>
+
+    <!--   Error Messages    -->
+    <string name="error_message_network_connect">network connection error.</string>
+    <string name="error_message_invalid_phone_number_title">invalid phone number</string>
+    <string name="error_message_invalid_phone_number">invalid phone number.</string>
+    <string name="error_message_not_allowed">not allowed user.</string>
+    <string name="error_message_no_login_key">wrong login key.</string>
+    <string name="error_message_wrong_password">wrong password</string>
+    <string name="error_message_wrong_api_key">wrong api key.</string>
+    <string name="error_message_no_simcard">no sim card.</string>
+    <string name="error_message_userid_format">Invalid user id.</string>
+    <string name="error_message_empty_username">Input user name.</string>
+    <string name="error_message_empty_birthnum">Input citizen num.</string>
+    <string name="error_message_duplicate_birthnum">Duplicated citizen num.</string>
+    <string name="error_message_duplicate_userid"> Duplicated user id.</string>
+    <string name="error_message_failed_delete_room">Failed to delete room </string>
+    <string name="error_message_failed_delete_contact">Failed to delete contact</string>
+    <string name="error_message_failed_change_pwd">changing password failed, try again.</string>
+    <string name="error_message_failed_send_file">Send file failed, try again.</string>
+    <string name="error_message_failed_input_tagname">Contact can not include comma.</string>
+    <string name="error_message_low_storage_title">Low storage</string>
+    <string name="error_message_low_storage">Low storage</string>
+    <string name="error_message_unregistered_userid">Unregistered user id</string>
+    <string name="error_message_unregistered_phonenumber">Unregistered phone number</string>
+
+    <string name="change_pwd_success">changing password success</string>
+
+    <string name="quicktext_hello">hello</string>
+    <string name="quicktext_bye">bye</string>
+    <string name="quicktext_arrive_soon">arrive soon</string>
+    <string name="quicktext_not_at_all">thanks</string>
+    <string name="quicktext_what_are_you_doing">what are you doing?</string>
+    <string name="quicktext_will_be_late">i will be late</string>
+    <string name="quicktext_in_coming_back_home">coming back home</string>
+    <string name="quicktext_i_will_go">i will go</string>
+    <string name="quicktext_in_meeting">meeting</string>
+    <string name="quicktext_i_will_call_later">i will call you later.</string>
+    <string name="quicktext_please_confirm">please confirm.</string>
+    <string name="quicktext_in_confirming">confirming</string>
+    <string name="quicktext_where_are_you">where are you</string>
+    <string name="quicktext_call_me_quickley">call me quickly</string>
+    <string name="quicktext_follow_soon">come as soon.</string>
+    <string name="quicktext_wait_until_reach">wait until reach.</string>
+
+    <!-- Error Message -->
+    <string name="error_1">parameter error</string>
+    <string name="error_2">API key error</string>
+    <string name="error_3">database error</string>
+    <string name="error_4">24 forbidden</string>
+    <string name="error_5">verification</string>
+    <string name="error_6">verification error</string>
+    <string name="error_7">message sending error</string>
+    <string name="error_8">incorrect authenticate file.</string>
+    <string name="error_9">duplicated id.</string>
+    <string name="error_10">connection failed</string>
+    <string name="error_11">file copy error</string>
+    <string name="error_12">file whose size is over 100MB is not able to send.</string>
+    <string name="error_13">user not found</string>
+    <string name="error_14">unregistered user</string>
+    <string name="error_15">incorrect password</string>
+    <string name="error_16">error</string>
+    <string name="error_17">error</string>
+    <string name="error_100">registration failed</string>
+    <string name="error_101">id is already registered.</string>
+    <string name="error_102">can not read profile.</string>
+    <string name="error_104">phone number is already registered.</string>
+    <string name="error_105">device already registered.</string>
+    <string name="error_default">server error</string>
+    <string name="signup_success">sign up successfully.</string>
+
+
+    <string name="set_server">Server setting</string>
+    <string name="set_successfully">Successfully set.</string>
+    <string name="audio_codec">Audio codec</string>
+    <string name="video_quality">Video Quality</string>
+    <string name="video_quality_high">High quality</string>
+    <string name="video_quality_medium">Medium Quality</string>
+    <string name="video_quality_low">Low quality</string>
+
+    <!-- [Do not localize!] -->
+    <string-array name="default_smiley_texts" translatable="false">
+        <item>:-)</item>
+        <item>;-)</item>
+        <item>:-(</item>
+        <item>:\'(</item>
+        <item>B-)</item>
+        <item>:-*</item>
+        <item>:-P</item>
+        <item>:O</item>
+        <item>O:-)</item>
+        <item>=-O</item>
+        <item>:-[</item>
+        <item>:-!</item>
+        <item>:-\\</item>
+        <item>:-D</item>
+        <item>o_O</item>
+        <item>:-X</item>
+        <item>&lt;3</item>
+        <item>x-(</item>
+        <item>:-/</item>
+        <item>:-I</item>
+        <item>∠</item>
+        <item>〒</item>
+        <item>≯</item>
+        <item>№</item>
+        <item>﹌ </item>
+        <item>\\▽/</item>
+        <item>☀</item>
+        <item>╭∩╮</item>
+        <item>(o)</item>
+        <item>( _ )</item>
+        <item>(*ｉ*)</item>
+        <item>{()}</item>
+        <item>(*)</item>
+        <item>£›</item>
+        <item>*-:-)</item>
+        <item>※</item>
+        <item>:-y</item>
+        <item>●</item>
+        <item>*&amp;*</item>
+        <item>□</item>
+        <item>:-~~</item>
+        <item>^``^</item>
+        <item>*^*</item>
+        <item>&lt;(\')</item>
+        <item>(=)</item>
+    </string-array>
+</resources>

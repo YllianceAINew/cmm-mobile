@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    class="com.multimediachat.ui.views.MessageView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_chat_date"
+        layout="@layout/chat_date_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layout_chat_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dip"
+            android:layout_marginRight="8dip">
+
+            <com.multimediachat.ui.views.CircularImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="@dimen/chat_profile_img_size"
+                android:layout_height="@dimen/chat_profile_img_size"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/messageBody"
+                android:src="@drawable/profilephoto"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/messageBody"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip">
+
+                <TextView
+                    android:id="@+id/messagets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="5dip"
+                    android:textColor="@color/from_name_color"
+                    android:textSize="@dimen/chat_msg_time_text_size" />
+
+                <ImageView
+                    android:id="@+id/ic_send_msg"
+                    android:src="@drawable/ic_send_msg"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/ic_received_msg"
+                    android:src="@drawable/ic_send_msg"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"/>
+
+                <ProgressBar
+                    android:id="@+id/loading"
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/font_level_1"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/messageBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="3dp"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/text_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chat_to_item_bg"
+                    android:minHeight="@dimen/chat_profile_img_size"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/message_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_level_3" />
+
+                    <ImageView
+                        android:id="@+id/call_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/media_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chat_to_item_bg"
+                    android:visibility="visible">
+
+                    <com.multimediachat.ui.views.PicaImageView
+                        android:id="@+id/media_thumbnail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/desc_image" />
+
+                    <ImageView
+                        android:id="@+id/media_video_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/chatbox_playvideo" />
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/audioClickingArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/chat_audio_widget_width"
+                        android:layout_height="42dp"
+                        android:background="@drawable/chat_to_item_bg"
+                        android:orientation="horizontal">
+
+                        <ProgressBar
+                            android:id="@+id/audioProgressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="3dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:max="100"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/chat_room_to_voice_progress_clip" />
+
+                        <com.multimediachat.ui.views.PicaImageView
+                            android:id="@+id/btnPlay"
+                            android:layout_width="@dimen/voice_msg_play_icon_size"
+                            android:layout_height="@dimen/voice_msg_play_icon_size"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="@dimen/margin_s"
+                            android:contentDescription="@string/desc_image"
+                            android:src="@drawable/chatbox_play04" />
+
+                        <TextView
+                            android:id="@+id/audioTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_level_3" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <com.multimediachat.ui.views.PicaImageView
+                    android:id="@+id/maskView"
+                    android:layout_width="0.0dip"
+                    android:layout_height="0.0dip"
+                    android:background="@drawable/chat_to_item_mask" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center">
+
+                    <com.multimediachat.ui.views.PicaImageView
+                        android:id="@+id/noDownload"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="3dp"
+                        android:visibility="gone" />
+
+                    <com.multimediachat.ui.views.PicaImageView
+                        android:id="@+id/btnMediaDownload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/mediaupload"
+                        android:visibility="gone" />
+
+                    <com.multimediachat.ui.views.PicaImageView
+                        android:id="@+id/btnMediaDownloadCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/btn_mediadownloadcancel"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/progressUploadOrDownload"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/chat_profile_img_size"
+            android:padding="8dp"
+            android:src="@drawable/btn_check"
+            android:visibility="gone"/>
+    </LinearLayout>
+</view>

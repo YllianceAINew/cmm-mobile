@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_id"
+                android:textColor="@color/my_profile_label"
+                android:textSize="@dimen/font_level_5" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/font_level_5"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:padding="@dimen/default_padding_size"
+        android:text="@string/change_pwd_desc"
+        android:textColor="@color/primary_text_color"
+        android:textSize="@dimen/font_level_5"
+        android:background="@color/landscape_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_component_height"
+        android:layout_margin="@dimen/default_padding_size"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_halfright_medium_default"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_halfbutton_medium_default"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="@string/new_password"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/font_level_5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primary_border_color"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+
+            <EditText
+                android:id="@+id/edit_new_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="@integer/max_password_length"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:textSize="@dimen/font_level_5"
+                android:background="@drawable/bg_primary_input"
+                android:paddingLeft="5dp"
+                android:paddingRight="32dp"/>
+
+            <ImageView
+                android:layout_width="@dimen/input_right_icon_width"
+                android:layout_height="@dimen/input_right_icon_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cii_lock"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primary_border_color"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_component_height"
+        android:layout_margin="@dimen/default_padding_size"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_halfright_medium_default"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_halfbutton_medium_default"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="@string/password_confirm"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/font_level_5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primary_border_color"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+
+            <EditText
+                android:id="@+id/edit_confirm_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="@integer/max_password_length"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:textSize="@dimen/font_level_5"
+                android:background="@drawable/bg_primary_input"
+                android:paddingLeft="5dp"
+                android:paddingRight="32dp"/>
+
+            <ImageView
+                android:layout_width="@dimen/input_right_icon_width"
+                android:layout_height="@dimen/input_right_icon_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cii_confirmlock"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primary_border_color"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_primary_radius"
+        android:gravity="center"
+        android:text="@string/password_change"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_level_6"
+        android:textStyle="bold" />
+
+</LinearLayout>

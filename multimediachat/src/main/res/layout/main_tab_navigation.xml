@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/status_bar"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/led_disconnected"
+            android:background="@drawable/statusled_background"
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray_color"/>
+
+    <com.multimediachat.ui.views.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pstsDividerColor="@color/transparent"
+        app:pstsIndicatorColor="@color/background_tab_pressed"
+        app:pstsIndicatorHeight="0dp"
+        app:pstsShouldExpand="true"
+        app:pstsTabPaddingLeftRight="0dip"
+        app:pstsUnderlineColor="@color/background_tab_pressed"
+        app:pstsUnderlineHeight="0dp">
+    </com.multimediachat.ui.views.PagerSlidingTabStrip>
+
+</LinearLayout>
+

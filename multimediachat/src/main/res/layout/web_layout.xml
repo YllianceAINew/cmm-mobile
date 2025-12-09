@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/landscape_background"
+        android:text="@string/help_index"
+        android:textColor="@color/font_text_color"
+        android:textSize="@dimen/font_level_4"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"/>
+
+    <com.multimediachat.ui.adapter.carouseltab.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"/>
+
+</LinearLayout>

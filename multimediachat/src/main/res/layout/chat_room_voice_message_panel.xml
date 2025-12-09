@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D0000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ProgressBar
+                    android:id="@+id/record_time_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="@dimen/record_progress_size"
+                    android:layout_height="@dimen/record_progress_size"
+                    android:background="@drawable/circle_shape"
+                    android:max="300"
+                    android:progressDrawable="@drawable/circular_progress_bar"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="@dimen/record_progress_size"
+                    android:layout_height="@dimen/record_progress_size"
+                    android:background="@drawable/bg_record_mic"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/img_max_amplitude"
+                    android:layout_width="32dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/red"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <com.multimediachat.ui.views.PicaImageView
+                    android:id="@+id/imgMic"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/voicemsg_mic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_record_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="64dp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="50dp"
+            android:paddingHorizontal="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_padding_size"
+                    android:gravity="center"
+                    android:text="@string/record_description"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_record_description"/>
+
+        </LinearLayout>
+
+</LinearLayout>

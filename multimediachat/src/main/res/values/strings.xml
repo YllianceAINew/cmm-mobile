@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- General: Names -->
+    <string name="app_name">다매체대화기</string>
+    <string name="app_version">1.0.0</string>
+    <string name="im_label">다매체대화기</string>
+    <string name="notification_title">다매체대화기</string>
+    <string name="desc_image">화상</string>
+    <string name="title_contacts">주소록</string>
+    <string name="copyright_desc">천하관 2025</string>
+    <string name="app_publish_id">이 제품은 콤퓨터쏘프트웨어보호법에 의하여\n 보호됩니다.     ㄱ-12345678</string>
+    <string name="version_update">갱신</string>
+
+    <string name="ok">확인</string>
+    <string name="select_friends_title">대화자 선택</string>
+    <string name="chat_room_send_text">본문통보문…</string>
+    <string name="chatid_hint">6~20자의 영어,수자, “_”의 조합으로서 반드시 영어로 시작하여야 합니다.</string>
+    <string name="title_chat">대화</string>
+    <string name="title_chat_list">대화목록</string>
+    <string name="title_my_info">나의 정보</string>
+    <string name="title_settings">설정</string>
+    <string name="cancel">취소</string>
+    <string name="save">보존</string>
+    <string name="my_profile">나의 정보</string>
+    <string name="chat_search">대화내용 검색</string>
+    <string name="qrcode_scan">QR코드 읽기</string>
+    <string name="delete">삭제</string>
+    <string name="camera">동영상촬영</string>
+    <string name="photo_camera">사진촬영</string>
+    <string name="choose_fileselect">화일선택</string>
+    <string name="delete_warning">통화중이므로 주소를 삭제할수 없습니다.</string>
+    <string name="confirm_out_room">《%s》대화방에서 나가겠습니까?</string>
+    <string name="str_leave">대화방탈퇴</string>
+    <string name="send">전송</string>
+    <string name="confirm_accept">《%s》사용자의 주소추가요청을 승인하겠습니까?</string>
+    <string name="confirm_decline">《%s》사용자의 주소추가요청을 거절하겠습니까?</string>
+    <string name="confirm_cancel">《%s》사용자의 주소추가요청을 취소하겠습니까?</string>
+    <string name="contact_joined"><xliff:g id="user">%1$s</xliff:g>사용자가 접속하였습니다.</string>
+    <string name="contact_left"><xliff:g id="user">%1$s</xliff:g>사용자가 대화방에서 탈퇴하였습니다.</string>
+    <string name="contact_online"><xliff:g id="user">%1$s</xliff:g>사용자가 가입하였습니다.</string>
+    <string name="contact_offline"><xliff:g id="user">%1$s</xliff:g>사용자가 가입탈퇴하였습니다.</string>
+    <string name="contact_away"><xliff:g id="user">%1$s</xliff:g>자리비움</string>
+    <string name="contact_busy"><xliff:g id="user">%1$s</xliff:g>사용자는 일하고있습니다.</string>
+    <string name="mic_discription">누른채로 유지하고 록음</string>
+    <string name="error_voice_length_short">록음시간이 너무 짧습니다.</string>
+    <string name="cannot_use_storage">전화기기억기를 리용할수 없습니다.</string>
+    <string name="draft_remove">통보문이 편집중에 있습니다. 탈퇴하면 편집중인 통보문이 삭제됩니다.</string>
+    <string name="save_path">전화기기억기/Download/다매체대화기</string>
+    <string name="file_choose_limit">화일을 9개이상 선택할수 없습니다.</string>
+    <string name="error_file_type">화일형식이 정확하지 않습니다.</string>
+    <string name="no_chat">대화리력이 없습니다.</string>
+    <string name="chat_menu_copy_msg">복사</string>
+    <string name="chat_menu_resend">재전송</string>
+    <string name="title_myprofile">나의 정보</string>
+    <string name="confirm">확인</string>
+    <string name="password_confirm">암호확인</string>
+    <string name="accept_invitation">접수</string>
+    <string name="decline_invitation">거절</string>
+    <string name="title_server_error">봉사기오유</string>
+    <string name="content_server_error">봉사기에서 문제가 발생하였습니다. 프로그람을 재기동하여야 합니다.</string>
+    <string name="input_password">이 암호는 무효합니다. 다시 입력하십시오.</string>
+    <string name="content_loginError">봉사기에 가입할수 없습니다.</string>
+    <string name="content_connectError">봉사기와의 접속이 실패하였습니다.</string>
+    <string name="help">도움말</string>
+    <string name="search">검색</string>
+    <string name="password">암호</string>
+    <string name="login">가입</string>
+    <string name="signup">새로 등록</string>
+    <string name="setting">설정</string>
+    <string name="setting_title_log_out">가입탈퇴</string>
+    <string name="subscription_notify_text"><xliff:g id="user">%s</xliff:g>사용자로부터 주소추가요청</string>
+    <string name="unsubscription_notify_text"><xliff:g id="user">%s</xliff:g>사용자가 당신을 주소록에서 삭제하였습니다.</string>
+    <string name="subscription_decline_notify_text"><xliff:g id="user">%s</xliff:g>사용자가 당신의 주소추가요청을 거절하였습니다.</string>
+    <string name="subscription_cancel_notify_text"> \"<xliff:g id="user">%s</xliff:g>\"사용자s가 당신의 주소추가요청을 취소하였습니다.</string>
+    <string name="subscription_approved_notify_text"> \"<xliff:g id="user">%s</xliff:g>\"사용자가 당신의 주소록에 추가되였습니다.</string>
+    <string name="notify_groupchat_label">다자대화요청</string>
+    <string name="group_chat_invite_notify_text"><xliff:g id="user">%s</xliff:g>대화방에서 대화요청이 들어왔습니다.</string>
+    <string name="status_bar_sent_image">화상</string>
+    <string name="status_bar_sent_audio">음성</string>
+    <string name="status_bar_sent_video">동영상</string>
+    <string name="status_bar_sent_file">화일</string>
+    <string name="status_bar_str_group_chat">다자대화</string>
+    <string name="error">오유</string>
+    <string name="select_contact">주소를 선택하여야 합니다.</string>
+    <string name="group_chat_limit">사용자를 9명이상 선택할수 없습니다.</string>
+    <string name="network_error">망접속상태를 확인해주십시오.</string>
+    <string name="not_signed_in">가입이 실패하였습니다.</string>
+    <string name="unknown_file_format">지원하지 않는 화일형식입니다.</string>
+    <string name="loading">적재중…</string>
+    <string name="provider_full_name_xmpp">통보문전송초과</string>
+    <string name="signed_out_prompt_with_error">가입탈퇴오유</string>
+    <string name="friend_requests_title">받은 요청</string>
+    <string name="friend_requests_title_receive">개의 요청 있음</string>
+    <string name="friend_requests_title_sent">보낸 요청</string>
+    <string name="friend_requests_no_received_friends">받은 요청이 없습니다.</string>
+    <string name="friend_requests_no_sent_friends">보낸 요청이 없습니다.</string>
+    <string name="friend_find_by_id_or_name_title">식별자 또는 전화번호검색</string>
+    <string name="friend_find_title">식별자나 전화번호로 대화자 찾기</string>
+    <string name="friend_find_by_id_or_name_finding_friends">사용자검색중…</string>
+    <string name="friend_list_edit_no_friends">등록된 주소가 없습니다.</string>
+    <string name="chat_list_picatalk_team_name">다매체대화기관리자</string>
+    <string name="logout_confirm">가입탈퇴를 할 때 대화관련자료들이 삭제되지는 않습니다.\n그러나 새 대화내용이 들어오는데 대한 알림통보는 받지 못합니다.</string>
+    <string name="logout_logout_btn_text">가입탈퇴</string>
+    <string name="logout_message_wait_for_logging_out">가입탈퇴중…</string>
+    <string name="images_and_videos">화상 및 동영상</string>
+    <string name="str_add_friend">새 주소 추가</string>
+    <string name="msg_for_find_friends_failure">사용자가 존재하지 않습니다.</string>
+    <string name="event_name">이름</string>
+    <string name="not_sent">전송실패</string>
+    <string name="inReady">대기중…</string>
+    <string name="inProgress">전송중…</string>
+    <string name="inCompress">압축중…</string>
+    <string name="invite_voice_call">음성통화요청입니다…</string>
+    <string name="waiting_for_response">응답대기중…</string>
+    <string name="button_done">보존</string>
+    <string name="passwords_not_match">입력한 암호와 암호확인이 서로 다릅니다.</string>
+    <string name="passwords_length_not_enough">암호는 6~20자로 되여야 합니다.</string>
+    <string name="error_call_declined">호출실패</string>
+    <string name="error_user_not_found">호출실패</string>
+    <string name="audio_call">음성호출</string>
+    <string name="video_call">동영상호출</string>
+    <string name="invite_video_call">동영상통화요청입니다…</string>
+    <string name="service_name">다매체대화기</string>
+    <string name="incall_notif_active">호출중…</string>
+    <string name="incall_notif_paused">호출대기중…</string>
+    <string name="incall_notif_audio">통화중…</string>
+    <string name="incall_notif_video">통화중…</string>
+    <string name="couldnt_accept_call">응답실패</string>
+    <string name="register">승인</string>
+    <string name="accept">응답</string>
+    <string name="decline">끝내기</string>
+    <string name="unknown_incoming_call_name">등록되지 않은 사용자</string>
+
+    <string name="no_contact_to_add">추가할수 있는 사용자가 존재하지 않습니다.</string>
+    <string name="no_tag">주소모임이 존재하지 않습니다.</string>
+    <string name="delete_contact">주소록에서 삭제</string>
+    <string name="phone_number">손전화번호</string>
+    <string name="phone_number_hint">1911234567</string>
+    <string name="error_unknown">호출실패</string>
+    <string name="error_incompatible_media">호출실패</string>
+    <string name="error_low_bandwidth">망대역문제로 하여 동영상호출을 진행할수 없습니다.</string>
+    <string name="error_network_unreachable">망접속이 실패하였습니다. 접속상태를 확인하여야 합니다.</string>
+    <string name="error_bad_credentials">인증화일이 정확하지 않습니다.</string>
+    <string name="error_unauthorized">인증이 실패하였습니다.</string>
+    <string name="error_io_error">망접속이 실패하였습니다. 접속상태를 확인하여야 합니다.</string>
+    <string name="unread_messages">%i 읽지 않은 통보문</string>
+    <string name="select">선택</string>
+    <string name="create_filse_send">다매체화일</string>
+    <string name="tab_label_image">화상</string>
+    <string name="tab_label_video">동영상</string>
+    <string name="tab_label_audio">음악</string>
+    <string name="tab_label_file">화일</string>
+    <string name="declined">요청거절</string>
+    <string name="cancelled">취소함</string>
+    <string name="duration">통화시간</string>
+    <string name="not_accept">받지못함</string>
+    <string name="no_answer">응답없음</string>
+    <string name="busy">통화중…</string>
+    <string name="call_failure">호출실패</string>
+    <string name="delete_conversation">대화방 삭제</string>
+    <string name="change_group_name">대화방이름변경</string>
+    <string name="title_add_contacts">주소추가</string>
+    <string name="tags">주소모임</string>
+    <string name="search_contact">주소검색</string>
+    <string name="mobile_contacts">손전화기주소록</string>
+    <string name="add_from_mobile_address_book">손전화기주소록으로부터 추가</string>
+    <string name="all_tags">주소모임</string>
+    <string name="new_tag">새 주소모임</string>
+    <string name="tag_name">주소모임의 이름</string>
+    <string name="members">포함된 주소들</string>
+    <string name="edit_tag">편집</string>
+    <string name="tag_remove">주소모임이 편집중에 있습니다. 탈퇴하면 편집중인 주소모임이 삭제됩니다.</string>
+    <string name="about">프로그람정보</string>
+    <string name="no">아니</string>
+    <string name="yes">예</string>
+    <string name="call_paused_by_remote">상대방이 호출대기중입니다.</string>
+    <string name="reset">재설정</string>
+    <string name="delete_contact_msg">이 주소를 삭제하겠습니까?</string>
+    <string name="add">추가</string>
+    <string name="send_a_friend_request_first">요청통보문</string>
+    <string name="friend_request">추가요청</string>
+    <string name="write_greeting">요청통보문…</string>
+    <string name="get_profile_error">주소록정보를 읽을수 없습니다.</string>
+    <string name="save_this_change">보관하겠습니까?</string>
+    <string name="don_t_save">아니</string>
+    <string name="tag_already_exist">같은 이름을 가진 주소모임이 이미 존재합니다.</string>
+    <string name="delete_tag">주소모임 삭제</string>
+    <string name="delete_tag_description">주소모임을 삭제할 때 주소모임안에 포함된 주소는 삭제되지 않습니다.\n삭제하겠습니까?</string>
+    <string name="new_chat">새 대화</string>
+    <string name="add_contacts_id_number">식별자 또는 전화번호를 검색하여 추가</string>
+    <string name="title_friend_profile">주소정보</string>
+    <string name="myprofile_str_change_picture">주소정보의 사진</string>
+    <string name="choose_profilephoto">화상화일 선택</string>
+    <string name="new_photo_camera">사진 촬영</string>
+    <string name="message_view_audio">음성자료</string>
+    <string name="waiting_capture">대기중…</string>
+    <string name="waiting_convert">절환중…</string>
+    <string name="str_minute">분</string>
+    <string name="str_second">초</string>
+    <string name="selected_file">선택한 자료</string>
+    <string name="missed_call_title">받지 못한 전화</string>
+    <string name="connecting_to_mobilecom">자료접속망에 접속중입니다.</string>
+    <string name="cant_connect_to_server">봉사기에 접속할수 없습니다. 망접속상태를 확인해주십시오.</string>
+    <string name="cant_connect_to_xmpp_server">통보문대화봉사기에 접속할수 없습니다. 망접속상태를 확인해주십시오.</string>
+    <string name="cant_connect_to_sip_server">통화를 진행할수 없습니다. 망상태를 확인하여야 합니다.</string>
+    <string name="status_dialog_title">봉사기접속상태</string>
+    <string name="file_manager_main">기본</string>
+    <string name="file_manager_primary">전화기기억기</string>
+    <string name="file_manager_total">전체 용량</string>
+    <string name="file_manager_available">남은 용량</string>
+    <string name="information">알림</string>
+    <string name="error_file_no_exist">화일이 존재하지 않습니다.</string>
+    <string name="file_upload_cancelled">취소됨</string>
+    <string name="file_upload_stopped">중지됨</string>
+    <string name="delete_chat_room">이 대화방을 삭제하겠습니까?</string>
+    <string name="delete_message">선택된 대화를 삭제하겠습니까?</string>
+    <string name="delete_messages">선택된 대화들을 삭제하겠습니까?</string>
+    <string name="overload_text_string">통보문의 길이가 초과되였습니다.</string>
+    <string name="no_search_result">검색결과가 없습니다.</string>
+    <string name="disable_call_in_uploading">화일전송중이므로 통화를 진행할수 없습니다.</string>
+    <string name="disable_call_in_downloading">화일수신중이므로 통화를 진행할수 없습니다.</string>
+    <string name="disable_use_camera_in_calling">통화중이므로 촬영을 진행할수 없습니다.</string>
+    <string name="disable_use_recorder_in_calling">통화중이므로 음성록음을 진행할수 없습니다.</string>
+    <string name="disable_ps_call">통화를 진행할수 없습니다.</string>
+    <string name="disable_call">통화를 진행할수 없습니다.</string>
+    <string name="disable_uploading_in_calling">통화중이므로 화일을 전송할수 없습니다.</string>
+    <string name="disable_logout_in_calling">통화중이므로 가입탈퇴할수 없습니다.</string>
+    <string name="file_copy_confirm">화일을 보존하면 《전화기기억기/Download/다매체대화기》서류철에 보존됩니다. 화일이름을 입력하여야 합니다.</string>
+    <string name="file_head_image">화상자료</string>
+    <string name="file_head_video">동영상자료</string>
+    <string name="file_head_audio">음성자료</string>
+    <string name="input_file_name">화일이름을 입력하여야 합니다.</string>
+    <string name="file_no_exist">화일이 존재하지 않습니다.</string>
+    <string name="file_copy_success">화일복사가 끝났습니다.\n</string>
+    <string name="show_property">상세정보</string>
+    <string name="send_time">송신시간: </string>
+    <string name="received_time">수신시간: </string>
+    <string name="call_start_time">통화시작시간: </string>
+    <string name="call_end_time">통화끝시간: </string>
+    <string name="file_size">화일용량: </string>
+    <string name="videocall_time">호출시간: </string>
+    <string name="videocall_state">호출결과: </string>
+    <string name="group_name">대화방이름</string>
+    <string name="group_leave_error">대화방에서 나갈수 없습니다.</string>
+    <string name="group_list">사용자목록</string>
+    <string name="input_group_name">대화방의 이름을 입력하여야 합니다.</string>
+    <string name="group_left">탈퇴</string>
+    <string name="user_">사용자가</string>
+    <string name="you_and">당신과</string>
+    <string name="to_user">사용자에게</string>
+    <string name="to_you">당신에게</string>
+    <string name="sent_request_for_group_chat">다자대화요청을 보냈습니다.</string>
+    <string name="birth_number">시민증번호</string>
+    <string name="change_account">이 계정을 리용하여 다른 사용자가 이미 가입하였습니다. 새 계정을 창조하여야 합니다.</string>
+    <string name="unable_to_create_or_join_group_chat">대화방을 창조하거나 가입할수 없습니다.</string>
+    <string name="already_received_friend_request">이 사용자로부터 이미 주소추가요청을 받았습니다.</string>
+    <string name="full_image">전화면보기</string>
+    <string name="preview">미리보기</string>
+    <string name="choose_photo">사진 선택</string>
+    <string name="images">사진 선택</string>
+    <string name="str_done">확인</string>
+    <string name="tap_to_turn_light_on">조명을 켜려면 여기를 누릅니다.</string>
+    <string name="qr_code_align">QR코드가 테두리안에 들어가게\n해야 합니다.</string>
+    <string name="tap_to_turn_light_off">조명을 끄려면 여기를 누릅니다.</string>
+    <string name="qr_code_not_found">QR코드를 찾지 못하였습니다.</string>
+    <string name="alert">경고</string>
+    <string name="warning">주의</string>
+    <string name="msg_camera_framework_bug">사진촬영을 진행할수 없습니다.</string>
+    <string name="scan_qr_code_to_add_me">QR코드를 읽어 주소를 추가합니다.</string>
+    <string name="str_my_qrcode">나의 QR코드</string>
+    <string name="str_friend_qrcode">주소정보의 QR코드</string>
+    <string name="save_to_phone">손전화기에 보존</string>
+    <string name="save_photo_success">손전화기에 정확히 보존되였습니다.</string>
+    <string name="save_photo_failed">조작이 실패하였습니다.</string>
+    <string name="scan_contact_s_qr_code">추가하려는 대화자의 QR코드 읽기</string>
+    <string name="AllPhotos">전체 사진</string>
+    <string name="AllVideos">전체 동영상</string>
+    <string name="sign_up_start">새로등록 시작</string>
+    <string name="password_next">다음</string>
+    <string name="user_name">이름</string>
+    <string name="user_id">식별자</string>
+    <string name="sign_up">등록</string>
+    <string name="sign_up_title_phone_number">손전화번호 기입</string>
+    <string name="sign_up_title_password">암호 설정</string>
+    <string name="sign_up_title_user_info">사용자정보</string>
+    <string name="profile">사진</string>
+    <string name="enter_current_password">현재의 암호를 확인한 다음 암호를 변경할수 있습니다.</string>
+    <string name="change_pwd_desc">새 암호를 입력하십시오. 새 암호로 변경하면 이전의 암호는 사용할수 없습니다.</string>
+    <string name="current_password">현재 암호</string>
+    <string name="new_password">새 암호</string>
+    <string name="password_change">암호 변경</string>
+    <string name="set_pwd">새 암호 설정</string>
+    <string name="search_chat">검색어 입력</string>
+    <string name="app_info">프로그람정보</string>
+    <string name="logout_desc">가입탈퇴를 할 때 대화관련자료들은 삭제되지 않습니다. 그러나 새 대화내용이 들어오는데 대한 알림통보는 받지 못합니다.</string>
+    <string name="title_search_chat_history">대화내용 검색</string>
+    <string name="register_id">등록명:</string>
+    <string name="check_user_info">가입자확인</string>
+    <string name="check_user_info_desc">당신은 가입자확인을 하여야 계속 사용할수 있습니다.</string>
+    <string name="input_birth_num">시민증번호를 입력하십시오.</string>
+    <string name="error_message_failed_check_user_info_title">가입자확인 실패</string>
+    <string name="error_message_failed_check_user_info">가입자확인에 실패하였습니다.\n가입자확인은 3회까지 반복할수 있습니다.</string>
+    <string name="success_check_user_info">가입자확인에 통과되였습니다.</string>
+
+    <string name="decline_incoming_call">거절</string>
+    <string name="accept_incoming_call">받기</string>
+    <string name="speaker_outgoing">증폭</string>
+    <string name="mute_outgoing">음차단</string>
+    <string name="switch_camera">카메라절환</string>
+    <string name="to_voice_call">음성통화로 전환</string>
+    <string name="tags_list_all">(전체)</string>
+
+    <string name="help_index">차례</string>
+    <string name="help_index_1">1 《다매체대화기》에 대하여</string>
+    <string name="help_index_2">2 등록 및 가입</string>
+    <string name="help_index_2_1">2.1 등록</string>
+    <string name="help_index_2_2">2.2 가입</string>
+    <string name="help_index_3">3 대화</string>
+    <string name="help_index_3_1">3.1 대화목록</string>
+    <string name="help_index_3_2">3.2 대화기능</string>
+    <string name="help_index_3_2_1">3.2.1 본문통보문</string>
+    <string name="help_index_3_2_2">3.2.2 음성통보문</string>
+    <string name="help_index_3_2_3">3.2.3 음성통화</string>
+    <string name="help_index_3_2_4">3.2.4 동영상통화</string>
+    <string name="help_index_3_2_5">3.2.5 화일전송</string>
+    <string name="help_index_3_3">3.3 대화내용 삭제</string>
+    <string name="help_index_3_4">3.4 대화내용 검색</string>
+    <string name="help_index_3_5">3.5 다자대화</string>
+    <string name="help_index_4">4 주소록</string>
+    <string name="help_index_4_1">4.1 주소추가</string>
+    <string name="help_index_4_1_1">4.1.1 받은 요청 처리</string>
+    <string name="help_index_4_1_2">4.1.2 주소 추가</string>
+    <string name="help_index_4_2">4.2 주소정보</string>
+    <string name="help_index_4_3">4.3 주소 삭제</string>
+    <string name="help_index_5">5 설정</string>
+    <string name="help_index_5_1">5.1 나의 정보</string>
+    <string name="help_index_5_2">5.2 프로그람정보</string>
+    <string name="help_index_5_3">5.3 도움말</string>
+    <string name="help_index_6">6 가입 탈퇴</string>
+
+    <string name="save_login_info">가입정보 보관</string>
+    <string name="record_description">단추를 놓으면 음성통보문이 전송됩니다.\n록음단추밖으로 끌기하면 취소됩니다.</string>
+    <string name="password_friend">암호복구협조자</string>
+    <string name="select_pwd_friend_title">주소 선택</string>
+
+    <string name="chat_more_voice_call">음성통화</string>
+    <string name="chat_more_video_call">동영상통화</string>
+    <string name="chat_more_camera">촬영전송</string>
+    <string name="chat_more_file">화일전송</string>
+    <string name="chat_more_setting">대화방설정</string>
+    <string name="chat_more_select">선택</string>
+    <string name="chat_more_help">도움말</string>
+    <string name="chat_more_leave">대화방나가기</string>
+    <string name="network_connected">망련결됨</string>
+    <string name="network_disconnected">망련결끊어짐</string>
+    <string name="network_inprogress">망련결중</string>
+    <string name="forgot_password">암호를 잊었습니까?</string>
+    <string name="sorry_we_cannot_play_this_audio_file">음성화일을 재생할수 없습니다.</string>
+    <string name="logout">가입 탈퇴</string>
+    <string name="out">탈퇴</string>
+    <string name="forgot_pwd_desc">인증코드를 확인하여 암호를 다시 설정합니다.\n인증코드를 발신하여 암호복구를 지원하는 신용사용자로부터 인증코드를 받아 기입해야 합니다.</string>
+    <string name="verify_code">인증코드</string>
+    <string name="request_verify_code">인증코드 발신</string>
+    <string name="input_verify_code">받은 인증코드를 기입하십시오.</string>
+    <string name="password_recovery">암호복구</string>
+    <string name="api_server_ip">응용프로그람봉사기주소</string>
+    <string name="sip_server_ip">SIP봉사기주소</string>
+
+    <!--   Error Messages    -->
+    <string name="error_message_network_connect">자료접속상태를 확인해주십시오.</string>
+    <string name="error_message_invalid_phone_number_title">손전화번호 무효</string>
+    <string name="error_message_invalid_phone_number">이 손전화번호는 이미 등록되여있거나 사용할수 없는 번호입니다.</string>
+    <string name="error_message_not_allowed">승인되지 않은 사용자입니다.</string>
+    <string name="error_message_no_login_key">인증화일이 존재하지 않습니다.</string>
+    <string name="error_message_wrong_password">암호가 틀립니다. 정확한 암호를 입력해주십시오.</string>
+    <string name="error_message_wrong_api_key">이 접속은 비법적인 사용이므로 허가되지 않습니다. 비법적인 사용에는 법적책임을 적용하게 됩니다.</string>
+    <string name="error_message_no_simcard">SIM카드가 없습니다. SIM카드가 있어야 사용할수 있습니다.</string>
+    <string name="error_message_userid_format">식별자는 영어,수자,"_"의 조합으로서 공백을 사용할수 없으며 6~20자로 되여야 합니다.</string>
+    <string name="error_message_empty_username">이름을 기입하여야 합니다.</string>
+    <string name="error_message_empty_birthnum">시민증번호를 기입하여야 합니다.</string>
+    <string name="error_message_duplicate_birthnum">이 시민증번호는 다른 사용자가 이미 등록한것이므로 사용할수 없습니다.</string>
+    <string name="error_message_duplicate_userid"> 이 식별자는 다른 사용자가 이미 등록한것이므로 사용할수 없습니다.</string>
+    <string name="error_message_failed_delete_room">대화방의 삭제에 실패하였습니다. 다시 해보십시오.</string>
+    <string name="error_message_failed_delete_contact">이 주소의 삭제에 실패하였습니다. 다시 해보십시오.</string>
+    <string name="error_message_failed_change_pwd">암호변경에 실패하였습니다. 다시 해보십시오.</string>
+    <string name="error_message_failed_send_file">화일전송이 실패하였습니다. 다시 해보십시오.</string>
+    <string name="error_message_failed_input_tagname">주소모임의 이름은 《,》문자를 포함할수 없습니다.</string>
+    <string name="error_message_low_storage_title">기억기부족</string>
+    <string name="error_message_low_storage">전화기기억기가 부족합니다.</string>
+    <string name="error_message_unregistered_userid">이 식별자는 등록되여있지 않습니다.</string>
+    <string name="error_message_unregistered_phonenumber">이 전화번호는 등록되여있지 않습니다.</string>
+
+    <string name="change_pwd_success">암호변경이 성공하였습니다.</string>
+
+    <string name="quicktext_hello">안녕하십니까?</string>
+    <string name="quicktext_bye">안녕히 계십시오.</string>
+    <string name="quicktext_arrive_soon">인차 도착합니다.</string>
+    <string name="quicktext_not_at_all">고맙습니다.</string>
+    <string name="quicktext_what_are_you_doing">무엇을 하고있습니까?</string>
+    <string name="quicktext_will_be_late">좀 늦어집니다.</string>
+    <string name="quicktext_in_coming_back_home">집으로 돌아가고있습니다.</string>
+    <string name="quicktext_i_will_go">제가 가겠습니다.</string>
+    <string name="quicktext_in_meeting">회의중입니다.</string>
+    <string name="quicktext_i_will_call_later">후에 전화하겠습니다.</string>
+    <string name="quicktext_please_confirm">확인해주십시오.</string>
+    <string name="quicktext_in_confirming">확인중입니다.</string>
+    <string name="quicktext_where_are_you">어디에 있습니까?</string>
+    <string name="quicktext_call_me_quickley">저에게 전화해주십시오.</string>
+    <string name="quicktext_follow_soon">빨리 오십시오.</string>
+    <string name="quicktext_wait_until_reach">도착할 때까지 기다려주십시오.</string>
+
+    <!-- Error Message -->
+    <string name="error_1">파라메터오유</string>
+    <string name="error_2">API열쇠오유</string>
+    <string name="error_3">자료기지오유</string>
+    <string name="error_4">24시간사용금지</string>
+    <string name="error_5">검증</string>
+    <string name="error_6">검증부호오유</string>
+    <string name="error_7">통보문전송오유</string>
+    <string name="error_8">인증화일이 정확하지 않습니다.</string>
+    <string name="error_9">식별자가 중복되였습니다.</string>
+    <string name="error_10">망접속이 실패하였습니다. 접속상태를 확인하여야 합니다.</string>
+    <string name="error_11">화일복사오유</string>
+    <string name="error_12">용량이 100MB이상인 화일은 전송할수 없습니다.</string>
+    <string name="error_13">사용자가 존재하지 않습니다.</string>
+    <string name="error_14">등록되지 않은 사용자입니다.</string>
+    <string name="error_15">암호가 정확하지 않습니다.</string>
+    <string name="error_16">오유</string>
+    <string name="error_17">오유</string>
+    <string name="error_100">등록이 실패하였습니다.</string>
+    <string name="error_101">식별자가 이미 등록되였습니다.</string>
+    <string name="error_102">사용자정보를 읽을수 없습니다.</string>
+    <string name="error_104">전화번호가 이미 등록되였습니다.</string>
+    <string name="error_105">장치가 이미 등록되였습니다.</string>
+    <string name="error_default">봉사기에서 오유가 발생하였습니다.</string>
+    <string name="signup_success">성과적으로 등록되였습니다.</string>
+
+
+    <string name="set_server">봉사기설정</string>
+    <string name="set_successfully">성과적으로 설정되였습니다.</string>
+    <string name="audio_codec">음성부호화</string>
+    <string name="video_quality">동영상통화화질</string>
+    <string name="video_quality_high">고화질</string>
+    <string name="video_quality_medium">일반</string>
+    <string name="video_quality_low">저화질</string>
+
+    <!-- [Do not localize!] -->
+    <string-array name="default_smiley_texts" translatable="false">
+        <item>:-)</item>
+        <item>;-)</item>
+        <item>:-(</item>
+        <item>:\'(</item>
+        <item>B-)</item>
+        <item>:-*</item>
+        <item>:-P</item>
+        <item>:O</item>
+        <item>O:-)</item>
+        <item>=-O</item>
+        <item>:-[</item>
+        <item>:-!</item>
+        <item>:-\\</item>
+        <item>:-D</item>
+        <item>o_O</item>
+        <item>:-X</item>
+        <item>&lt;3</item>
+        <item>x-(</item>
+        <item>:-/</item>
+        <item>:-I</item>
+        <item>∠</item>
+        <item>〒</item>
+        <item>≯</item>
+        <item>№</item>
+        <item>﹌ </item>
+        <item>\\▽/</item>
+        <item>☀</item>
+        <item>╭∩╮</item>
+        <item>(o)</item>
+        <item>( _ )</item>
+        <item>(*ｉ*)</item>
+        <item>{()}</item>
+        <item>(*)</item>
+        <item>£›</item>
+        <item>*-:-)</item>
+        <item>※</item>
+        <item>:-y</item>
+        <item>●</item>
+        <item>*&amp;*</item>
+        <item>□</item>
+        <item>:-~~</item>
+        <item>^``^</item>
+        <item>*^*</item>
+        <item>&lt;(\')</item>
+        <item>(=)</item>
+    </string-array>
+</resources>

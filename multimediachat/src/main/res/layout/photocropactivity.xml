@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.multimediachat.ui.views.gestures.views.GestureImageView
+        android:id="@+id/image_crop_viewer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:gest_doubleTapZoom="2"
+        app:gest_maxZoom="10"
+        app:gest_rotationEnabled="true"
+        tools:src="@drawable/profilephoto" />
+
+    <com.multimediachat.ui.views.gestures.commons.CropAreaView
+        android:id="@+id/image_crop_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp"
+        app:gest_aspect="1"
+        app:gest_rounded="false"
+        tools:gest_rulesHorizontal="2"
+        tools:gest_rulesVertical="2" />
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_profile_rotate" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_profile_ok" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/chat_list_item_paddingBottom"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="@dimen/chat_list_item_paddingTop"
+        android:paddingLeft="0dip" >
+
+        <com.multimediachat.ui.views.CircularImageView
+            android:id="@+id/imgPropile"
+            android:layout_width="@dimen/friend_list_profile_img_size"
+            android:layout_height="@dimen/friend_list_profile_img_size"
+            android:scaleType="fitXY"
+            android:src="@drawable/profilephoto" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/search_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/font_text_color"/>
+
+        <TextView
+            android:id="@+id/search_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/font_text_color"/>
+
+    </LinearLayout>
+</LinearLayout>

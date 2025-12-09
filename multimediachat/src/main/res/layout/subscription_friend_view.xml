@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    class="com.multimediachat.ui.views.SubscriptionFriendView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/general_list_item_bg"
+    android:orientation="horizontal">
+
+    <!-- profile section -->
+    <com.multimediachat.ui.views.CircularImageView
+        android:id="@+id/imgPropile"
+        android:layout_width="@dimen/friend_list_profile_img_size"
+        android:layout_height="@dimen/friend_list_profile_img_size"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/profilephoto" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contactNickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/font_text_color"
+                android:textSize="@dimen/friend_list_item_name_text_size" />
+
+            <TextView
+                android:id="@+id/txt_greeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/gray_label_color"
+                android:textSize="@dimen/friend_list_item_address_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dip"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_request_deny"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="5dip"
+                android:text="@string/decline_invitation"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_level_2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_register"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dip"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_request_confirm"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="5dip"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_level_2"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</view>

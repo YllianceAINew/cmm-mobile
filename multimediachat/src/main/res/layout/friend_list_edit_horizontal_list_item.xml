@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    
+    <com.multimediachat.ui.views.CircularImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="@dimen/friend_list_edit_horizontal_profile_size"
+        android:layout_height="@dimen/friend_list_edit_horizontal_profile_size"
+        android:src="@drawable/profilephoto"
+        />
+
+</LinearLayout>

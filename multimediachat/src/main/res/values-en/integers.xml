@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_name_length">20</integer>
+    <integer name="max_roomname_length">256</integer>
+    <integer name="max_password_length">20</integer>
+</resources>

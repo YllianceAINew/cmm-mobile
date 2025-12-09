@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <com.multimediachat.ui.views.CircularImageView
+        android:id="@+id/img_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profilephoto"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/btn_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@id/img_profile"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/deleteprepare" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/font_text_color"
+        android:textSize="@dimen/font_level_4" />
+</RelativeLayout>

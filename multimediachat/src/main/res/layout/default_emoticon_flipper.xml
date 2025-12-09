@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_share_flipper"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:orientation="horizontal" >
+
+    <GridView
+        android:id="@+id/gv_default_emoticon_gridview"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:verticalSpacing="4dp"
+        android:hapticFeedbackEnabled="true"
+        android:stretchMode="columnWidth" >
+    </GridView>
+    <View
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="#22444444"
+        />
+    <LinearLayout
+        android:id="@+id/smiley_panel_btn_group"
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+            <Button
+                    android:id="@+id/smiley_panel_del_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/delete_btn" />
+             <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="10dip"
+                android:background="#22444444"
+                />
+             <Button
+                    android:id="@+id/smiley_panel_space_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/space_btn" />
+             <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="10dip"
+                android:background="#22444444"
+                />
+             <Button
+                    android:id="@+id/smiley_panel_enter_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/enter_btn" />
+    </LinearLayout>
+
+</LinearLayout>

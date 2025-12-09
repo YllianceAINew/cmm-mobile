@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_header"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_select_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="@string/selected_file"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_level_5"/>
+
+        <ImageView
+            android:id="@+id/btn_delete"
+            android:layout_width="@dimen/actionbar_icon_size"
+            android:layout_height="@dimen/actionbar_icon_size"
+            android:layout_alignRight="@+id/actionbar"
+            android:adjustViewBounds="false"
+            android:background="@drawable/chatctrl_delete"
+            android:cropToPadding="false" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="@dimen/friend_list_item_separator2_margin_left"
+        android:background="@color/list_item_divider_color"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/separator1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="@dimen/friend_list_item_separator2_margin_left"
+        android:background="@drawable/bg_dialog_header"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list_selected_user"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chatlist_backcolor"
+            android:divider="@color/list_item_divider_color"
+            android:dividerHeight="0.5dp"
+            android:footerDividersEnabled="false"
+            android:listSelector="@color/transparent" />
+    </LinearLayout>
+</LinearLayout>

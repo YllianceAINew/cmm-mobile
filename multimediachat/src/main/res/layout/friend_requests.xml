@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <com.multimediachat.ui.views.SubscriptionFriendListView
+            android:id="@+id/subfriendListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/chatlist_backcolor"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/filteredList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/chatlist_backcolor"
+                android:divider="@color/list_item_divider_color"
+                android:dividerHeight="0.5dip"
+                android:gravity="top"
+                android:listSelector="@color/transparent" />
+
+            <TextView
+                android:id="@+id/emptyView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/loading"
+                android:textColor="@color/font_text_color"
+                android:textSize="@dimen/font_level_3" />
+        </com.multimediachat.ui.views.SubscriptionFriendListView>
+    </LinearLayout>
+
+</LinearLayout>

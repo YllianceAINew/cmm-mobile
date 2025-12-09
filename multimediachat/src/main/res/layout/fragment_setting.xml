@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SettingFragment">
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/list_item_divider_color"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/list_item_divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/lyt_my_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/general_list_item_bg"
+                android:gravity="center_vertical"
+                android:paddingBottom="14dp"
+                android:paddingLeft="@dimen/setting_list_item_paddingLeft"
+                android:paddingRight="@dimen/setting_list_item_paddingRight"
+                android:paddingTop="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_myprofile"
+                    android:textColor="@color/font_text_color"
+                    android:textSize="@dimen/font_level_5" />
+
+                <com.multimediachat.ui.views.PicaImageView
+                    android:layout_width="@dimen/angler_right_width"
+                    android:layout_height="@dimen/angler_right_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/desc_image"
+                    android:src="@drawable/angleright" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/list_item_divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/lyt_app_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/general_list_item_bg"
+                android:gravity="center_vertical"
+                android:paddingBottom="14dp"
+                android:paddingLeft="@dimen/setting_list_item_paddingLeft"
+                android:paddingRight="@dimen/setting_list_item_paddingRight"
+                android:paddingTop="14dp">
+
+                <TextView
+                    android:id="@+id/txtAppInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_info"
+                    android:textColor="@color/font_text_color"
+                    android:textSize="@dimen/font_level_5" />
+
+                <com.multimediachat.ui.views.PicaImageView
+                    android:layout_width="@dimen/angler_right_width"
+                    android:layout_height="@dimen/angler_right_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/desc_image"
+                    android:src="@drawable/angleright" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/list_item_divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/lyt_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/general_list_item_bg"
+                android:gravity="center_vertical"
+                android:paddingBottom="14dp"
+                android:paddingLeft="@dimen/setting_list_item_paddingLeft"
+                android:paddingRight="@dimen/setting_list_item_paddingRight"
+                android:paddingTop="14dp">
+
+                <TextView
+                    android:id="@+id/txtHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/help"
+                    android:textColor="@color/font_text_color"
+                    android:textSize="@dimen/font_level_5" />
+
+                <com.multimediachat.ui.views.PicaImageView
+                    android:layout_width="@dimen/angler_right_width"
+                    android:layout_height="@dimen/angler_right_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/desc_image"
+                    android:src="@drawable/angleright" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/list_item_divider_color"/>
+
+            <RelativeLayout
+                android:id="@+id/lyt_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/general_list_item_bg"
+                android:gravity="center_vertical"
+                android:paddingBottom="14dp"
+                android:paddingLeft="@dimen/setting_list_item_paddingLeft"
+                android:paddingRight="@dimen/setting_list_item_paddingRight"
+                android:paddingTop="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_title_log_out"
+                    android:textColor="@color/font_text_color"
+                    android:textSize="@dimen/font_level_5" />
+
+                <com.multimediachat.ui.views.PicaImageView
+                    android:layout_width="@dimen/angler_right_width"
+                    android:layout_height="@dimen/angler_right_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/desc_image"
+                    android:src="@drawable/angleright" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/list_item_divider_color"/>
+
+            <RelativeLayout
+                android:id="@+id/btn_bps_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/general_list_item_bg"
+                android:gravity="center_vertical"
+                android:paddingBottom="14dp"
+                android:paddingLeft="@dimen/setting_list_item_paddingLeft"
+                android:paddingRight="@dimen/setting_list_item_paddingRight"
+                android:paddingTop="14dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Development Option"
+                    android:textColor="@color/font_text_color"
+                    android:textSize="@dimen/font_level_5" />
+
+                <com.multimediachat.ui.views.PicaImageView
+                    android:layout_width="@dimen/angler_right_width"
+                    android:layout_height="@dimen/angler_right_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/desc_image"
+                    android:src="@drawable/angleright" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/list_item_divider_color"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

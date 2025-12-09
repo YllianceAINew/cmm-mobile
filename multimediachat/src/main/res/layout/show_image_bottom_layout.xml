@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/show_image_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/view_backcolor"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.multimediachat.ui.views.HorizontalListView
+            android:id="@+id/image_list"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/transparent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical">
+
+        <CheckBox
+            android:id="@+id/btn_fullimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/btn_fullimage"
+            android:paddingLeft="5dp"
+            android:text="@string/full_image"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_level_3" />
+
+        <CheckBox
+            android:id="@+id/btn_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="5dp"
+            android:text="@string/select"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_level_3" />
+    </LinearLayout>
+
+</LinearLayout>

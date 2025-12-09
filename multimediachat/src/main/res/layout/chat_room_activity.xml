@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/chat_room_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/status_bar"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/led_disconnected"
+            android:background="@drawable/statusled_background"
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

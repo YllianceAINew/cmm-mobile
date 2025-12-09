@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.multimediachat.util.qrcode.client.android.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ImageView
+        android:id="@+id/bg_findview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_qr_scan"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/flashlight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/bg_findview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:checked="false"
+        android:text="@string/tap_to_turn_light_on"
+        android:textColor="#ffffff"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/btnLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/flashlight_text"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/btn_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashlight_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:text="@string/qr_code_align"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="20dp" />
+</RelativeLayout>

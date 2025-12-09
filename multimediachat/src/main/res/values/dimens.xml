@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+-->
+
+<resources>
+    <!-- font -->
+    <dimen name="font_level_0">10.0sp</dimen>
+    <dimen name="font_level_0_5">11.0sp</dimen>
+    <dimen name="font_level_1">12.0sp</dimen>
+    <dimen name="font_level_2">14.0sp</dimen>
+    <dimen name="font_level_3">16.0sp</dimen>
+    <dimen name="font_level_4">17.0sp</dimen>
+    <dimen name="font_level_5">18.0sp</dimen>
+    <dimen name="font_level_6">20.0sp</dimen>
+    <dimen name="font_level_7">22.0sp</dimen>
+    <dimen name="font_level_8">27.0sp</dimen>
+
+    <!-- chat_room -->
+    <dimen name="chat_sendbar_height">50dp</dimen>
+    <dimen name="chat_header_height">42dp</dimen>
+    <dimen name="chat_room_slide_menu_padding">2.0dp</dimen>
+    <dimen name="chat_room_member_view_block_btn_padding_left">10dp</dimen>
+    <dimen name="chat_room_member_view_block_btn_padding_right">10dp</dimen>
+    <dimen name="chat_image_height">120dp</dimen>
+    <dimen name="chat_image_width">70dp</dimen>
+
+    <!-- friendlist Activity -->
+    <dimen name="confirm_dlg_profile_width">60dp</dimen>
+    <dimen name="confirm_dlg_profile_height">60dp</dimen>
+    <dimen name="confirm_dlg_header_line_height">2dp</dimen>
+
+    <!-- chatlist Activity -->
+
+    <dimen name="chat_list_item_paddingTop">5dp</dimen>
+    <dimen name="chat_list_item_paddingBottom">5dp</dimen>
+    <dimen name="chat_list_profile_img_size">56dp</dimen>
+    <dimen name="friend_list_item_separator2_margin_left">0dp</dimen>
+    <dimen name="friend_list_profile_img_size">56dp</dimen>
+    <!-- friend profile activity -->
+    <dimen name="friend_profile_activity_profile_size">140dp</dimen>
+    <dimen name="friend_list_edit_profile_size">56dp</dimen>
+    <dimen name="setting_list_item_paddingLeft">12dp</dimen>
+    <dimen name="setting_list_item_paddingRight">12dp</dimen>
+    <dimen name="search_item_paddingTop">10dp</dimen>
+    <dimen name="search_item_paddingBottom">10dp</dimen>
+
+    <dimen name="chat_audio_widget_width">160dp</dimen>
+
+    <dimen name="me_man_img_size">140dp</dimen>
+    <dimen name="chat_profile_img_size">42dp</dimen>
+    <dimen name="chat_from_name_size">60dp</dimen>
+
+    <!-- chat list -->
+
+
+    <!-- new -->
+    <dimen name="friend_list_profile_img_size_for_grid">96dp</dimen>
+
+    <dimen name="friend_list_item_header_height">20dp</dimen>
+    <dimen name="friend_list_item_header_text_margin_left">8.67dp</dimen>
+    <dimen name="friend_list_edit_horizontal_profile_size">45.0dp</dimen>
+
+    <dimen name="chat_bottom_panel_height">237dp</dimen>
+    <dimen name="chat_sticker_bottom_bar_height">40dp</dimen>
+    <dimen name="chat_sticker_bottom_bar_width">50dp</dimen>
+
+
+    <!-- timeline -->
+
+    <!-- font sizes -->
+    <dimen name="chat_list_item_name_text_size">16sp</dimen>
+    <dimen name="chat_list_item_id_text_size">14sp</dimen>
+    <dimen name="chat_list_item_time_text_size">10sp</dimen>
+
+    <dimen name="searchbar_input_text_size">16sp</dimen>
+    <dimen name="friend_list_item_name_text_size">14sp</dimen>
+    <dimen name="friend_list_item_address_text_size">12sp</dimen>
+    <dimen name="chat_msg_time_text_size">12sp</dimen>
+
+    <dimen name="dialog_title_size">18.0sp</dimen>
+    <dimen name="dialog_content_size">17.0sp</dimen>
+    <dimen name="dialog_button_size">14.0sp</dimen>
+
+    <!-- main tab -->
+
+    <!-- item store detail view -->
+    <dimen name="friend_profile_margin_top">15dp</dimen>
+    <dimen name="actionbar_icon_size">32dp</dimen>
+
+    <dimen name="margin_l">20dp</dimen>
+    <dimen name="margin_m">10dp</dimen>
+    <dimen name="margin_s">8dp</dimen>
+
+    <dimen name="actionbar_height">58dp</dimen>
+    <dimen name="share_panel_port_height">260dp</dimen>
+
+    <!--  component dimens  -->
+    <dimen name="btn_green_height">50dp</dimen>
+    <dimen name="btn_green_radius">50dp</dimen>
+    <dimen name="btn_gray_height">50dp</dimen>
+    <dimen name="btn_gray_radius">50dp</dimen>
+    <dimen name="input_right_icon_width">30dp</dimen>
+    <dimen name="input_right_icon_height">30dp</dimen>
+    <dimen name="input_component_height">42dp</dimen>
+    <dimen name="default_padding_size">20dp</dimen>
+    <dimen name="angler_right_width">10dp</dimen>
+    <dimen name="angler_right_height">18dp</dimen>
+    <dimen name="fb_icon_size">40dp</dimen>
+    <dimen name="fb_lyt_height">80dp</dimen>
+    <dimen name="font_noti">10dp</dimen>
+    <dimen name="incoming_padding_top">80dp</dimen>
+    <dimen name="calling_profile_size">160dp</dimen>
+    <dimen name="firstpage_padding_size">40dp</dimen>
+    <dimen name="tag_icon_size">32dp</dimen>
+    <dimen name="dialog_button_width">200dp</dimen>
+    <dimen name="record_progress_size">200dp</dimen>
+    <dimen name="search_box_icon_size">24dp</dimen>
+    <dimen name="main_tab_icon_size">32dp</dimen>
+    <dimen name="main_drawer_icon_size">18dp</dimen>
+    <dimen name="voice_msg_play_icon_size">20dp</dimen>
+</resources>

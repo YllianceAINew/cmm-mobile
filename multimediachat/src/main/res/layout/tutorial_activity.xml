@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/secondscreen"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/firstpage_padding_size"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/margin_l">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/btn_green_height"
+                android:adjustViewBounds="true"
+                android:text="@string/login"
+                android:textSize="@dimen/font_level_8"
+                android:textColor="@color/green_text_color"
+                android:background="@drawable/btn_white_radius"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnCreatNewAccount"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/btn_green_height"
+                android:adjustViewBounds="true"
+                android:text="@string/signup"
+                android:textSize="@dimen/font_level_8"
+                android:textColor="@color/green_text_color"
+                android:background="@drawable/btn_white_radius"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnSetServerIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_l"
+        android:gravity="right"
+        android:text="@string/set_server"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>

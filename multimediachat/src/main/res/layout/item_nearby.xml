@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    class="com.multimediachat.ui.views.FindFriendView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/general_list_item_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lyt_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="9dp">
+
+            <com.multimediachat.ui.views.CircularImageView
+                android:id="@+id/imgPropile"
+                android:layout_width="@dimen/friend_list_profile_img_size"
+                android:layout_height="@dimen/friend_list_profile_img_size"
+                android:scaleType="fitXY"
+                android:src="@drawable/profilephoto" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contactNickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/font_text_color"
+                android:textSize="@dimen/friend_list_item_name_text_size" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_plus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/btn_mobile_contact_plus"/>
+
+    </LinearLayout>
+
+</view>

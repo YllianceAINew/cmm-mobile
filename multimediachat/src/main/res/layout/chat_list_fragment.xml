@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/chatlist_backcolor">
+
+    <!-- Chat list -->
+    <com.multimediachat.ui.views.ChatListFilterView
+        android:id="@+id/chatFilterView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/filteredList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/list_item_divider_color"
+            android:dividerHeight="0.5dp"
+            android:gravity="top"
+            android:listSelector="@color/transparent"/>
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/no_chat"
+            android:textColor="@color/font_text_color"
+            android:textSize="@dimen/font_level_3" />
+
+    </com.multimediachat.ui.views.ChatListFilterView>
+
+</LinearLayout>

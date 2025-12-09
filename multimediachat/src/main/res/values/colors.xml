@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- general -->
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#FF000000</color>
+    <color name="line_color">#B6BDC6</color>
+    <color name="gray_color">#c3c3c3</color>
+    <color name="darkgray_color">#535353</color>
+    <color name="profile_border_color">#cccfd2</color>
+    <color name="topbar_sel_color">#1E000000</color>
+    <color name="green_color">#68d323</color>
+    <color name="drawlayout_bg_color">#14b9d6</color>
+    <color name="actionbar_backcolor">#305982</color>
+    <color name="chatlist_backcolor">#00000000</color>
+    <color name="view_backcolor">#f5f5f5</color>
+    <color name="light_gray_color">#e6e7e8</color>
+    <color name="light_sel_gray_color">#c9cacb</color>
+    <color name="tabfont_color">#ff5d5d5d</color>
+    <color name="font_disable_color">#ff989999</color>
+    <color name="divider_gray_color">#b4b4b4</color>
+
+    <color name="ap_background_color">#ffffffff</color>
+    <color name="list_item_bg_bottom_color">#ffd9dbdc</color>
+    <color name="dark_primaryfont_color">#ffffffff</color>
+    <color name="list_primary_text_color">#333333</color>
+
+    <color name="dialog_bg_color">#e9e9e9</color> <!-- Android standard ICS color -->
+    <color name="light_tabfont_disable_color">#805d5d5d</color>
+
+    <color name="general_border_color">#536a7b</color>
+	<color name="general_online_color">#50be75</color>
+	<color name="general_red_color">#f74856</color>
+	<color name="general_red_color_sel">#f52e3d</color>
+	<color name="slidebgcolor">#1c374e</color>
+	<color name="passcodebgcolor">#33ffffff</color>
+	<color name="chatbarseparatorcolor">#515d69</color>
+    <color name="badge_bg_color">#f74856</color>
+    <color name="spinner_item_bg">#535353</color>
+    <color name="tag_sel_color">#24A45A</color>
+    <color name="tag_all_sel_color">#50BE75</color>
+
+    <!-- font -->
+    <color name="font_text_color">#555555</color>
+    <color name="font_desc_color">#ffffff</color>
+    <color name="passcode_number_color">#ffffff</color>
+
+    <!-- List Item -->
+    <color name="item_bgcolor_selected">#E0E0E0</color>
+    <color name="list_item_header_text_color">#6C7288</color>
+    <color name="list_item_divider_color">#c3c3c3</color>
+    <color name="chat_list_time_stamp_color">#ffffff</color>
+
+    <!-- Dialog -->
+    <color name="confirm_dlg_header_line_color">#74b6e8</color>
+    <color name="confirm_dlg_contact_color">#509DD5</color>
+    <color name="option_item_bgcolor_selected">#323232</color>
+    <color name="option_item_bgcolor">#212121</color>
+    <color name="dlg_item_divide_color">#141618</color>
+    <color name="dlg_back_color">#212121</color>
+    <color name="dlg_trans_bg">#D8000000</color>
+
+    <!-- Snap Movie round progress -->
+
+    <!-- Chat Room Item -->
+    <color name="chat_friend_msg_time_text_color">#ffaeaeae</color>
+
+    <!-- Chat Slide -->
+    <color name="chat_slide_friend_block_btn_bg_color">#F13939</color>
+    <color name="chat_slide_friend_unblock_btn_bg_color">#4BD963</color>
+    <color name="font_uchatid_color">#8a8a8a</color>
+    <color name="font_chatname_color">#ffffff</color>
+
+    <!-- Chat Bottom Bar -->
+    <color name="chat_sticker_bottom_bar_aboveline_color">#DADDE6</color>
+    <color name="chat_bottom_panel_btn_text_color">#ffffff</color>
+    <color name="chat_bottom_panel_btn_color_sel">#DADDE6</color>
+    <color name="chat_bottom_panel_btn_color">#E5E8F1</color>
+    <color name="chat_room_input_text_hint_color">#aaaaac</color>
+
+    <!-- Chat Room -->
+    <color name="chat_room_bg_color">#f0f4f7</color>
+
+    <!-- Web Time Line -->
+
+    <!-- Shake Activity -->
+
+    <!-- Friend Profile Activity -->
+    <color name="friend_profile_activity_header_text_color">#ffffff</color>
+    <color name="friend_profile_activity_body_text_color">#ffffff</color>
+
+    <!-- My profile Activity -->
+
+    <!-- setting activity -->
+
+    <!-- facebook account activity -->
+
+    <!-- picatalk register activity -->
+
+    <!-- page tab indicator -->
+<!--    <color name="background_tab_pressed">#00cae7</color>-->
+<!--    <color name="background_tab">@color/colorPrimary</color>-->
+    <color name="background_tab_pressed">#305982</color>
+    <color name="background_tab">#fff</color>
+    
+    <!-- item store -->
+    <color name="item_store_tab_indicator_color">#56a9df</color>
+    <color name="item_store_tab_underline_color">#cdd1d4</color>
+    <color name="item_store_name_text_color">#282d31</color>
+    <color name="item_store_bg_color_grey">#ecf0f3</color>
+    <color name="item_store_theme_item_divider_color">#e1e2e7</color>
+
+    <!-- item store detail -->
+
+    <!-- my page -->
+    <color name="mypage_tab_text_sel_color">#55aae0</color>
+    <color name="mypage_tab_text_color">#fcffff</color>
+    <color name="mypage_coupon_item_bottom_layout_bg_color">#b252595d</color>
+    <color name="mypage_coupon_item_bottom_layout_price_text_color">#bebebe</color>
+    <color name="mypage_coupon_item_select_bg_color">#1E000000</color>
+
+    <!-- plus friend -->
+
+    <!-- extras -->
+    <color name="solid_white">#ffffffff</color>
+    <color name="secondary_text">#ff999999</color>
+
+    <!-- qrcode -->
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+
+    <!-- Button Colors -->
+    <color name="button_ok_default_color">#305982</color>
+    <color name="button_ok_selected_color">#1c374e</color>
+    <color name="button_ok_disabled_color">#486a8a</color>
+    <color name="button_cancel_default_color">#a8a9ab</color>
+    <color name="button_cancel_selected_color">#525252</color>
+    <color name="button_cancel_disabled_color">#c3c3c5</color>
+
+    <!-- List Colors -->
+    <color name="list_item_select_color">#f74856</color>
+
+    <!-- Labels -->
+    <color name="label_bg_color">#d0d0d0</color>
+
+<!--    <color name="colorPrimary">#007385</color>-->
+    <color name="colorPrimary">#305982</color>
+
+    <color name="blue">#0099ff</color>
+    <color name="dark_blue">#6699ff</color>
+    <color name="attach_title">#309bbf</color>
+
+    <color name="edit_background">#d2d6d9</color>
+
+    <color name="text_cursor">@color/chat_room_input_text_hint_color</color>
+    <color name="menu_bg_color">#ee305982</color>
+
+    <color name="call_red_default">#f74755</color>
+    <color name="call_red_selected">#f81c2e</color>
+    <color name="call_blue_default">#00a96f</color>
+    <color name="call_blue_selected">#05865a</color>
+    <color name="call_white">#44ffffff</color>
+    <color name="call_slide_background">#96000000</color>
+    <color name="call_background_top">#3c4148</color>
+    <color name="call_background_center">#bf000000</color>
+    <color name="call_background_bottom">#75787d</color>
+    <color name="call_background_bottom_selected">#929599</color>
+    <color name="call_background_button_space">#3c4148</color>
+    <color name="call_background_red">#ff5563</color>
+    <color name="call_background_blue">#08ffbf</color>
+
+    <color name="conn_status_bar_background">#4d4d4d</color>
+
+    <color name="text_selected">#ffcf4c29</color>
+    <color name="text_over">#ffb9c4cb</color>
+    <color name="text_default">#ff5b656f</color>
+    <color name="text_disabled">#ffa6b3bf</color>
+
+    <color name="text_button">#ff41484f</color>
+    <color name="text_button_disabled">#ffa6b3bf</color>
+    <color name="text_button_selected">#ff41484f</color>
+    <color name="text_button_over">#ffcf4c29</color>
+
+    <color name="missed_calls_background">#ffcf4c29</color>
+
+    <color name="landscape_background">#CCCCCC</color>
+
+    <color name="text_contrast">#ff000000</color> <!-- If background is white, set to black, else set to white -->
+    <color name="menu_button_background">#ff262a2e</color>
+
+    <!--Linphone-->
+    <color name="colorA">#ff5e00</color>
+    <color name="colorB">#000000</color>
+    <color name="colorC">#444444</color>
+    <color name="colorD">#808080</color>
+    <color name="search_item_view_background">#ffddff</color>
+    <color name="colorE">#c4c4c4</color>
+    <color name="colorF">#e1e1e1</color>
+    <color name="colorG">#f3f3f3</color>
+    <color name="colorH">#ffffff</color>
+    <color name="colorI">#ff0000</color>
+    <color name="colorL">#96c11f</color>
+    <color name="Bluecolor">#78bddd</color>
+
+    <color name="inactive_background">#807b7b7b</color>
+
+    <color name="spinner_select">#bee6ff</color>
+
+    <!-- dropdown -->
+    <color name="dropdown_bg_color">#25b894</color>
+    <color name="dropdown_sel_color">#f74856</color>
+    <color name="droplist_item_divide_color">#282828</color>
+    <color name="dropdown_text_color">#ffffff</color>
+
+    <!-- component colors -->
+    <color name="btn_primary_normal">#305982</color>
+    <color name="btn_primary_select">#1c374e</color>
+    <color name="btn_primary_disabled">#486a8a</color>
+    <color name="btn_gray_normal">#666666</color>
+    <color name="btn_gray_select">#525252</color>
+    <color name="primary_text_color">#333333</color>
+    <color name="primary_border_color">#aaa</color>
+    <color name="gray_label_color">#7F7F7F</color>
+    <color name="modal_background_color">#E6000000</color>
+    <color name="action_bar_btn_color_normal">#1c374e</color>#486a8a
+    <color name="action_bar_btn_color_disabled">#486a8a</color>
+    <color name="action_bar_btn_color_select">#1c374e</color>
+    <color name="my_profile_user_id">#7F7F7F</color>
+    <color name="my_profile_user_name">#555555</color>
+    <color name="my_profile_label">#555555</color>
+    <color name="input_label_bg">#d9d9d9</color>
+    <color name="primary_blue_color">#02a7f0</color>
+    <color name="hint_color">#ccc</color>
+    <color name="primary_list_item_bg">#e6e6e6</color>
+    <color name="editbox_label_text_color">#ffffff</color>
+    <color name="editbox_label_bg_color">#80999999</color>
+    <color name="editbox_text_color">#333</color>
+    <color name="editbox_text_hintcolor">#bbbbbb</color>
+    <color name="editbox_border_color">#d5d5d5</color>
+    <color name="editbox_border_focuscolor">#59c5f5</color>
+    <color name="editbox_bg_focuscolor">@color/transparent</color>
+    <color name="search_pane_background">#f2f2f2</color>
+
+    <color name="message_right_text_color">#e4e4e4</color>
+    <color name="message_left_text_color">#333333</color>
+    <color name="message_right_background_color">#305982</color>
+    <color name="message_left_background_color">#a9b8c8</color>
+    <color name="fb_lyt_color">#cdcdcd</color>
+    <color name="search_black_bg">#e0000000</color>
+    <color name="from_name_color">#AEAEAE</color>
+    <color name="green_text_color">#1C6610</color>
+    <color name="circular_image_border">#bbbbbb</color>
+    <color name="tags_list_item_bg">#ee305982</color>
+    <color name="tags_list_item_divider">#eeb4b4b4</color>
+    <color name="record_description">#7f000000</color>
+</resources>

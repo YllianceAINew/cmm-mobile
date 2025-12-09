@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <com.multimediachat.ui.views.PicaImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/main_tab_icon_size"
+            android:layout_height="@dimen/main_tab_icon_size"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/tab_contacts" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_centerHorizontal="true"
+            android:text="@string/title_contacts"
+            android:textColor="@color/gray_label_color"
+            android:textSize="@dimen/font_level_1" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/noti_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bg_badge"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

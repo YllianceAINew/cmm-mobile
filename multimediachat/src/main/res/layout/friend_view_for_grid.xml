@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    class="com.multimediachat.ui.views.FriendView"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/friend_list_item_header_height"
+        android:background="@drawable/friend_list_item_header_bg"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/friend_list_item_header_text_margin_left"
+            android:textColor="@color/list_item_header_text_color"
+            android:textSize="@dimen/font_level_0_5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/general_list_item_bg"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal" >
+
+        <!-- profile section -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="5dip"
+            android:paddingLeft="0dip" >
+
+            <com.multimediachat.ui.views.CircularImageView
+                android:id="@+id/imgPropile"
+                android:layout_width="@dimen/friend_list_profile_img_size_for_grid"
+                android:layout_height="@dimen/friend_list_profile_img_size_for_grid"
+                android:scaleType="fitXY"
+                android:src="@drawable/profilephoto" />
+
+            <com.multimediachat.ui.views.PicaImageView
+                android:id="@+id/img_friend_mark"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="-30dip"
+                android:layout_marginTop="-20dip"
+                android:layout_toRightOf="@+id/imgPropile"
+                android:contentDescription="@string/desc_image"
+                android:src="@drawable/bg_circle" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/contactNickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/font_text_color"
+                android:textSize="@dimen/friend_list_item_name_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:gravity="center" >
+
+                <com.multimediachat.ui.views.JellyBeanSpanFixTextView
+                    android:id="@+id/statusMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginTop="2dip"
+                    android:background="@drawable/friend_status_bubble"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:maxWidth="100dip"
+                    android:minWidth="30dip"
+                    android:textColor="@color/font_desc_color"
+                    android:textSize="@dimen/font_level_1"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separatorLine"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="@dimen/friend_list_item_separator2_margin_left"
+        android:background="@color/list_item_divider_color"
+        android:visibility="gone" />
+
+</view>

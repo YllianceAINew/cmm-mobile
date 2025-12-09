@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/chatbarseparatorcolor" />
+
+    <LinearLayout
+        android:id="@+id/sendbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="@dimen/chat_sendbar_height"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp">
+
+        <com.multimediachat.ui.views.PicaImageView
+            android:id="@+id/btnVoiceMessage"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/btn_voice_message"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_inputtext"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <!-- android:hint="@string/chat_input_message_placeholder" -->
+            <EditText
+                android:id="@+id/composeMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/chat_room_send_text"
+                android:imeOptions="actionSend|flagNoEnterAction"
+                android:inputType="textAutoCorrect|textCapSentences|textMultiLine|textImeMultiLine|textLongMessage"
+                android:maxHeight="200dp"
+                android:singleLine="false"
+                android:textColor="@color/font_text_color"
+                android:textColorHint="@color/chat_room_input_text_hint_color"
+                android:textSize="@dimen/font_level_4"
+                android:minHeight="50dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutHoldTalk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_small"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/mic_discription"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_level_4" />
+        </LinearLayout>
+
+        <com.multimediachat.ui.views.PicaImageView
+            android:id="@+id/btnEmoji"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/desc_image"
+            android:src="@drawable/chatctrl_emoticon" />
+
+        <ImageView
+            android:id="@+id/btnSend"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:paddingLeft="5dip"
+            android:paddingRight="10dip"
+            android:src="@drawable/chatroom_input_send_icon"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/chatbarseparatorcolor" />
+</LinearLayout>

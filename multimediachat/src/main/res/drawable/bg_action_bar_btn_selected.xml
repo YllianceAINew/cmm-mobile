@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <size android:height="32dp"/>
+    <solid android:color="@color/action_bar_btn_color_select"/>
+    <corners android:radius="16dp"/>
+</shape>
