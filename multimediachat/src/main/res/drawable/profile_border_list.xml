@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Profile picture border for chat list items -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/transparent" />
+    <stroke
+        android:width="2dp"
+        android:color="@color/circular_image_border" />
+</shape>
+

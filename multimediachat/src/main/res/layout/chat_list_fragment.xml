@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/chatlist_backcolor">
+    android:background="@color/chat_room_bg_color">
 
     <!-- Chat list -->
     <com.multimediachat.ui.views.ChatListFilterView
@@ -16,21 +16,31 @@
             android:id="@+id/filteredList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:divider="@color/list_item_divider_color"
-            android:dividerHeight="0.5dp"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
             android:gravity="top"
-            android:listSelector="@color/transparent"/>
+            android:background="@color/chat_room_bg_color"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:listSelector="@color/transparent"
+            android:cacheColorHint="#00000000"
+            android:fastScrollEnabled="false"/>
 
         <TextView
             android:id="@+id/empty"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="center"
             android:background="@null"
             android:gravity="center"
             android:text="@string/no_chat"
-            android:textColor="@color/font_text_color"
-            android:textSize="@dimen/font_level_3" />
+            android:textColor="@color/secondary_text"
+            android:textSize="16sp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:lineSpacingMultiplier="1.4" />
 
     </com.multimediachat.ui.views.ChatListFilterView>
 

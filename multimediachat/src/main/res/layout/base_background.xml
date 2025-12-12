@@ -153,20 +153,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_centerVertical="true"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
 
                     <ImageView
                         android:id="@+id/btn_cancel_search"
                         android:layout_width="@dimen/actionbar_icon_size"
                         android:layout_height="@dimen/actionbar_icon_size"
-                        android:layout_margin="@dimen/margin_s"
-                        android:src="@drawable/cii_remove"/>
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/cii_remove"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"/>
 
                     <RelativeLayout
                         android:layout_width="0dp"
-                        android:layout_height="42dp"
-                        android:layout_marginRight="@dimen/margin_s"
-                        android:layout_weight="1">
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="40dp">
 
                         <EditText
                             android:id="@+id/edit_search_bar"
@@ -174,12 +179,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:hint="@string/search_chat"/>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/gray_color"
-                            android:layout_alignParentBottom="true"/>
 
                     </RelativeLayout>
 

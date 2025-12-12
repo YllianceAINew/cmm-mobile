@@ -23,8 +23,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_gravity="right"
-            android:layout_marginBottom="15dip"
-            android:layout_marginRight="8dip">
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
 
             <com.multimediachat.ui.views.CircularImageView
                 android:id="@+id/imgProfile"
@@ -41,42 +42,49 @@
                 android:orientation="horizontal"
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/messageBody"
-                android:layout_marginRight="10dip"
-                android:layout_marginTop="5dip">
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical">
 
                 <TextView
                     android:id="@+id/messagets"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="2dip"
-                    android:layout_marginRight="5dip"
-                    android:textColor="@color/from_name_color"
-                    android:textSize="@dimen/chat_msg_time_text_size" />
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="12sp" />
 
                 <ImageView
                     android:id="@+id/ic_send_msg"
                     android:src="@drawable/ic_send_msg"
                     android:layout_gravity="center_vertical"
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="2dp"
+                    android:tint="@color/colorPrimary"
                     android:visibility="gone"/>
 
                 <ImageView
                     android:id="@+id/ic_received_msg"
                     android:src="@drawable/ic_send_msg"
                     android:layout_gravity="center_vertical"
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="4dp"
+                    android:tint="@color/colorAccent"
                     android:visibility="gone"/>
 
                 <ProgressBar
                     android:id="@+id/loading"
-                    android:layout_width="15sp"
-                    android:layout_height="15sp"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginRight="3dp"
+                    android:layout_marginRight="4dp"
+                    android:indeterminateTint="@color/secondary_text"
                     android:visibility="gone" />
 
                 <TextView
@@ -85,8 +93,9 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:layout_gravity="center_vertical"
-                    android:textColor="@color/blue"
-                    android:textSize="@dimen/font_level_1"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
                     android:visibility="gone" />
 
             </LinearLayout>
@@ -95,9 +104,10 @@
                 android:id="@+id/messageBody"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="3dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_alignParentRight="true"
+                android:maxWidth="75%"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -105,18 +115,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/chat_to_item_bg"
-                    android:minHeight="@dimen/chat_profile_img_size"
+                    android:minHeight="40dp"
                     android:layout_gravity="right"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:maxWidth="100%">
 
                     <TextView
                         android:id="@+id/message_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:padding="10dp"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/font_level_3" />
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/message_right_text_color"
+                        android:textSize="16sp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxWidth="100%" />
 
                     <ImageView
                         android:id="@+id/call_icon"
@@ -130,13 +146,15 @@
                     android:id="@+id/media_layout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/chat_to_item_bg"
+                    android:background="@drawable/chat_bubble_right_media"
                     android:visibility="visible">
 
                     <com.multimediachat.ui.views.PicaImageView
                         android:id="@+id/media_thumbnail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/media_thumbnail_background"
+                        android:scaleType="centerCrop"
                         android:contentDescription="@string/desc_image" />
 
                     <ImageView
@@ -157,9 +175,10 @@
 
                     <RelativeLayout
                         android:layout_width="@dimen/chat_audio_widget_width"
-                        android:layout_height="42dp"
-                        android:background="@drawable/chat_to_item_bg"
-                        android:orientation="horizontal">
+                        android:layout_height="48dp"
+                        android:background="@drawable/voice_message_background_sent"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
 
                         <ProgressBar
                             android:id="@+id/audioProgressBar"
@@ -190,9 +209,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:layout_marginLeft="10dp"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/font_level_3" />
+                            android:layout_marginLeft="12dp"
+                            android:textColor="@color/message_right_text_color"
+                            android:textSize="14sp"
+                            android:textStyle="normal"/>
                     </RelativeLayout>
                 </FrameLayout>
 

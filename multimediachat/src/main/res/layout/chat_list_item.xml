@@ -1,26 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.multimediachat.ui.views.ChatListItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     class="com.multimediachat.ui.views.ChatListItemView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/general_list_item_bg"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
 
-    <LinearLayout
-        android:id="@+id/lyt_body"
-        android:layout_width="fill_parent"
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:baselineAligned="false"
-        android:orientation="horizontal"
-        android:paddingBottom="@dimen/chat_list_item_paddingBottom"
-        android:paddingTop="@dimen/chat_list_item_paddingTop">
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/white">
+        
+        <LinearLayout
+            android:id="@+id/lyt_body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="72dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:background="?android:attr/selectableItemBackground">
 
         <!-- profile section -->
 
         <RelativeLayout
             android:layout_width="@dimen/chat_list_profile_img_size"
             android:layout_height="@dimen/chat_list_profile_img_size"
-            android:layout_marginLeft="10dip"
+            android:layout_marginRight="16dp"
             android:layout_gravity="center_vertical">
 
             <com.multimediachat.ui.views.CircularImageView
@@ -29,26 +45,37 @@
                 android:layout_height="match_parent"
                 android:contentDescription="@string/desc_image"
                 android:scaleType="fitXY"
+                android:padding="2dp"
+                android:background="@drawable/profile_border_list"
                 android:src="@drawable/profilephoto" />
 
             <TextView
                 android:id="@+id/txtNoDirtyCnt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
-                android:background="@drawable/bg_badge"
+                android:layout_marginTop="-4dp"
+                android:layout_marginRight="-4dp"
+                android:background="@drawable/chat_badge_background"
                 android:gravity="center"
+                android:minWidth="20dp"
+                android:minHeight="20dp"
                 android:text="1"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"/>
         </RelativeLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:orientation="vertical">
@@ -62,71 +89,63 @@
                     android:id="@+id/roomName"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dip"
+                    android:layout_marginBottom="4dp"
                     android:layout_weight="1"
-                    android:ellipsize="marquee"
-                    android:marqueeRepeatLimit="marquee_forever"
+                    android:ellipsize="end"
+                    android:maxLines="1"
                     android:singleLine="true"
-                    android:textColor="@color/font_text_color"
-                    android:textSize="@dimen/chat_list_item_name_text_size" />
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingMultiplier="1.2" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
 
                 <com.multimediachat.ui.views.PicaImageView
                     android:id="@+id/imgLastMsg"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:contentDescription="@string/desc_image" />
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="8dp"
+                    android:contentDescription="@string/desc_image"
+                    android:scaleType="fitCenter" />
 
                 <TextView
                     android:id="@+id/lastMsg"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dip"
-                    android:ellipsize="marquee"
-                    android:marqueeRepeatLimit="marquee_forever"
-                    android:singleLine="true"
-                    android:textColor="@color/font_text_color"
-                    android:textSize="@dimen/chat_list_item_id_text_size" />
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="14sp"
+                    android:lineSpacingMultiplier="1.2" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/timestamp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:src="@drawable/timeindicator" />
-
-                <TextView
-                    android:id="@+id/timestamp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dip"
-                    android:maxLines="1"
-                    android:textColor="@color/font_text_color"
-                    android:textSize="@dimen/chat_list_item_time_text_size" />
-            </LinearLayout>
+                android:maxLines="1"
+                android:textColor="@color/hint_color"
+                android:textSize="12sp" />
         </LinearLayout>
 
-        <com.multimediachat.ui.views.PicaImageView
+        <ImageView
             android:id="@+id/onlineStatus"
-            android:layout_width="18dp"
-            android:layout_height="18dp"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginRight="10dip"
+            android:layout_marginLeft="8dp"
             android:contentDescription="@string/desc_image"
-            android:src="@drawable/bg_circle" />
+            android:src="@drawable/status_indicator_offline" />
     </LinearLayout>
+    
+    </android.support.v7.widget.CardView>
 
 </com.multimediachat.ui.views.ChatListItemView>

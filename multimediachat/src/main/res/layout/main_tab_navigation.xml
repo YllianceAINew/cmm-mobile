@@ -4,17 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/chat_room_bg_color">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="@color/chat_room_bg_color">
 
         <android.support.v4.view.ViewPager
             android:id="@+id/pager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:background="@color/chat_room_bg_color"/>
 
         <ImageView
             android:id="@+id/status_bar"
@@ -39,13 +42,15 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:background="@color/white"
         app:pstsDividerColor="@color/transparent"
         app:pstsIndicatorColor="@color/background_tab_pressed"
         app:pstsIndicatorHeight="0dp"
         app:pstsShouldExpand="true"
         app:pstsTabPaddingLeftRight="0dip"
-        app:pstsUnderlineColor="@color/background_tab_pressed"
-        app:pstsUnderlineHeight="0dp">
+        app:pstsUnderlineColor="@color/divider_gray_color"
+        app:pstsUnderlineHeight="1dp">
     </com.multimediachat.ui.views.PagerSlidingTabStrip>
 
 </LinearLayout>

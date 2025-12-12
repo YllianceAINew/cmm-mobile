@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modern voice message container background for sent messages -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/message_right_background_color" />
+    <corners android:radius="8dp" />
+</shape>
+

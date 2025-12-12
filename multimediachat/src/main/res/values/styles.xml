@@ -249,15 +249,17 @@
 	</style>
 
 	<style name="search_bar_edit">
-		<item name="android:background">@drawable/bg_primary_input</item>
+		<item name="android:background">@drawable/search_input_background</item>
 		<item name="android:drawableRight">@drawable/cii_search</item>
-		<item name="android:drawablePadding">2dp</item>
+		<item name="android:drawablePadding">8dp</item>
 		<item name="android:textCursorDrawable">@null</item>
-		<item name="android:paddingLeft">3dp</item>
-		<item name="android:paddingRight">3dp</item>
+		<item name="android:paddingLeft">12dp</item>
+		<item name="android:paddingRight">12dp</item>
+		<item name="android:paddingTop">12dp</item>
+		<item name="android:paddingBottom">12dp</item>
 		<item name="android:singleLine">true</item>
 		<item name="android:imeOptions">actionSearch</item>
-		<item name="android:textColor">@color/white</item>
+		<item name="android:textColor">@color/editbox_text_color</item>
 		<item name="android:textColorHint">@color/editbox_text_hintcolor</item>
 		<item name="android:textSize">@dimen/searchbar_input_text_size</item>
 	</style>
