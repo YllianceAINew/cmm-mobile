@@ -20,7 +20,7 @@ android {
             variant.outputs.each { output ->
                 def relativeRootDir = output.packageApplication.outputDirectory.toPath()
                         .relativize(rootDir.toPath()).toFile()
-                output.outputFileName = new File("$relativeRootDir/release", "ArirangChat1.0.apk")
+                output.outputFileName = new File("$relativeRootDir/release", "MultimediaChat1.0.apk")
             }
         }
         release {

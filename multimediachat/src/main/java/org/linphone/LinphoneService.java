@@ -383,7 +383,7 @@ public final class LinphoneService extends Service {
 	 */
 	private synchronized void notifyWrapper(int id, Notification notification) {
 		if (instance != null && notification != null) {
-			mNM.notify(id, notification); //arirangchat
+			mNM.notify(id, notification); //multimediachat
 		}
 	}
 
@@ -435,13 +435,13 @@ public final class LinphoneService extends Service {
 	}
 	
 	protected void onIncomingReceived() {
-		/*	start arirangchat*/
+		/*	start multimediachat*/
 		String username = mPref.getString("username", "");
 		if ( username.isEmpty() )
 			return;
 		//wakeup linphone
 		if ( !BaseActivity.isActive ) {
-			/*	end arirangchat*/
+			/*	end multimediachat*/
 			if (TextUtils.isEmpty(GlobalFunc.hasUploading(this)) && TextUtils.isEmpty(GlobalFunc.hasDownloading(this))) {
 				Intent intent = new Intent(this, IncomingActivity.class);
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

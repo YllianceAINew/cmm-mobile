@@ -223,7 +223,7 @@ public class LinphoneManager implements LinphoneCoreListener, LinphoneChatMessag
 
 	public String getUserAgent() throws NameNotFoundException {
 		StringBuilder userAgent = new StringBuilder();
-/*		arirangchat
+/*		multimediachat
 		userAgent.append("LinphoneAndroid/" + mServiceContext.getPackageManager().getPackageInfo(mServiceContext.getPackageName(),0).versionCode);
 		userAgent.append(" (");
 		userAgent.append("Linphone/" + LinphoneManager.getLc().getVersion() + "; ");
@@ -936,11 +936,11 @@ public class LinphoneManager implements LinphoneCoreListener, LinphoneChatMessag
 
 	@SuppressLint("Wakelock")
 	public void callState(final LinphoneCore lc,final LinphoneCall call, final State state, final String message) {
-		/*	start arirangchat*/
+		/*	start multimediachat*/
 		String username = mPref.getString("username", "");
 		if ( username.isEmpty() )
 			return;
-		/* end arirangchat  */
+		/* end multimediachat  */
 		if (state == State.IncomingReceived && !call.equals(lc.getCurrentCall())) {
 			if (call.getReplacedCall()!=null){
 				// attended transfer

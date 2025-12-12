@@ -1626,7 +1626,7 @@ public class Imps {
 		String TURN_OFF_SPEAKER = "turn_off_speaker";
 		String PRESS_ENTER_TO_SEND = "press_enter_to_send";
 		String FIND_MOBILE_CONTACTS = "find_mobile_contacts";
-		String METHODS_arirangchatID = "methods_arirangchatid";
+		String METHODS_multimediachatID = "methods_multimediachatid";
 		String METHODS_PHONENUMBER = "methods_phonenumber";
 		String METHODS_GROUPCHAT = "methods_groupchat";
 		String METHODS_QRCODE = "methods_qrcode";
@@ -1760,7 +1760,7 @@ public class Imps {
 				values.put(TURN_OFF_SPEAKER, 0);
 				values.put(PRESS_ENTER_TO_SEND, 0);
 				values.put(FIND_MOBILE_CONTACTS, 0);
-				values.put(METHODS_arirangchatID, 1);
+				values.put(METHODS_multimediachatID, 1);
 				values.put(METHODS_PHONENUMBER, 1);
 				values.put(METHODS_GROUPCHAT, 0);
 				values.put(METHODS_QRCODE, 1);

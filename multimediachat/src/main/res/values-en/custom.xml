@@ -7,7 +7,7 @@
 	<string name="picture_name_format">linphone-mms-%s.jpg</string>
 
 	<string name="addressbook_label">Linphone</string>
-	<string name="sync_account_name">arirangchat contacts</string>
+	<string name="sync_account_name">multimediachat contacts</string>
 	<string name="sync_mimetype">vnd.android.cursor.item/org.linphone.profile</string>
 <!--
 	<string name="notification_title">Linphone</string>

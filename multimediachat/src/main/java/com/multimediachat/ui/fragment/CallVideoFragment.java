@@ -56,7 +56,7 @@ public class CallVideoFragment extends Fragment implements OnGestureListener, Co
 	private float mZoomFactor = 1.f;
 	private float mZoomCenterX, mZoomCenterY;
 	private CompatibilityScaleGestureDetector mScaleDetector;
-	private CallingActivity inCallActivity;//arirangchat
+	private CallingActivity inCallActivity;//multimediachat
 
 	@SuppressWarnings("deprecation") // Warning useless because value is ignored and automatically set by new APIs.
 	@Override
@@ -74,7 +74,7 @@ public class CallVideoFragment extends Fragment implements OnGestureListener, Co
 			public void onVideoRenderingSurfaceReady(AndroidVideoWindowImpl vw, SurfaceView surface) {
 				mVideoView = surface;
 				LinphoneManager.getLc().setVideoWindow(vw);
-				resetZoom();//arirangchat
+				resetZoom();//multimediachat
 			}
 
 			public void onVideoRenderingSurfaceDestroyed(AndroidVideoWindowImpl vw) {
@@ -84,7 +84,7 @@ public class CallVideoFragment extends Fragment implements OnGestureListener, Co
 			public void onVideoPreviewSurfaceReady(AndroidVideoWindowImpl vw, SurfaceView surface) {
 				mCaptureView = surface;
 				LinphoneManager.getLc().setPreviewWindow(mCaptureView);
-				updatePreview();//arirangchat
+				updatePreview();//multimediachat
 			}
 
 			public void onVideoPreviewSurfaceDestroyed(AndroidVideoWindowImpl vw) {
@@ -98,7 +98,7 @@ public class CallVideoFragment extends Fragment implements OnGestureListener, Co
 					mScaleDetector.onTouchEvent(event);
 				}
 				mGestureDetector.onTouchEvent(event);
-				if ( event.getAction() == MotionEvent.ACTION_UP ) { //arirangchat
+				if ( event.getAction() == MotionEvent.ACTION_UP ) { //multimediachat
 					if (inCallActivity != null) {
 						inCallActivity.displayVideoCallControlsIfHidden();
 					}
@@ -235,7 +235,7 @@ public class CallVideoFragment extends Fragment implements OnGestureListener, Co
 //		return false;
 //	}
 
-	/*start arirangchat*/
+	/*start multimediachat*/
 	private void resetZoom()
 	{
 //		// Zoom to make the video fill the screen vertically
@@ -285,7 +285,7 @@ public class CallVideoFragment extends Fragment implements OnGestureListener, Co
 //		mZoomFactor = 1.f;
 //		mZoomCenterX = mZoomCenterY = 0.5f;
 //	}
-	/*end arirangchat*/
+	/*end multimediachat*/
 	@Override
 	public void onDestroy() {
 		inCallActivity = null;
@@ -316,7 +316,7 @@ public class CallVideoFragment extends Fragment implements OnGestureListener, Co
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
 		
-		inCallActivity = (CallingActivity) activity;//arirangchat
+		inCallActivity = (CallingActivity) activity;//multimediachat
 		if (inCallActivity != null) {
 			inCallActivity.bindVideoFragment(this);
 		}
@@ -358,7 +358,7 @@ public class CallVideoFragment extends Fragment implements OnGestureListener, Co
 		return false;
 	}
 
-	/*start arirangchat*/
+	/*start multimediachat*/
 	public void updatePreview() {
 		if (mCaptureView != null) {
 			int videoDeviceId = LinphoneManager.getLc().getVideoDevice();

@@ -461,7 +461,7 @@ public class ImpsProvider extends ContentProvider {
 					+ "background TEXT,"
 					+ "friend_confirmation INTEGER,"
 					+ "find_mobile_contacts INTEGER,"
-					+ "methods_multimediachatid INTEGER,"
+					+ "methods_arirangchatid INTEGER,"
 					+ "methods_phonenumber INTEGER,"
 					+ "methods_groupchat INTEGER,"
 					+ "methods_qrcode INTEGER,"

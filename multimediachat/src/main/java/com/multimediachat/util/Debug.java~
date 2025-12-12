@@ -69,7 +69,7 @@ public class Debug {
 			try {
 				FileWriter writer = new FileWriter(trail);
 				props.put(key, value);
-				props.store(writer, "multimediachat debug trail file");
+				props.store(writer, "arirangchat debug trail file");
 				writer.close();
 			} catch (IOException e) {
 				throw new RuntimeException(e);

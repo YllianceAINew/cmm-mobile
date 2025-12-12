@@ -32,7 +32,7 @@ import com.multimediachat.ui.CallingActivity;
  * @author Sylvain Berfini
  */
 public class CallAudioFragment extends Fragment {
-	private CallingActivity incallActvityInstance;//arirangchat
+	private CallingActivity incallActvityInstance;//multimediachat
 	
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, 
@@ -44,7 +44,7 @@ public class CallAudioFragment extends Fragment {
 	@Override
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
-		incallActvityInstance = (CallingActivity) activity;//arirangchat
+		incallActvityInstance = (CallingActivity) activity;//multimediachat
 		
 		if (incallActvityInstance != null) {
 			incallActvityInstance.bindAudioFragment(this);

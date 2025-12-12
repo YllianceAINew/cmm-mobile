@@ -1633,7 +1633,7 @@ public class XmppConnection extends ImConnection implements CallbackHandler {
                                         } else {
                                             try {
                                                 if (bareAddress.startsWith("admin@")) {
-                                                    nickName = "arirangchat Team";
+                                                    nickName = "multimediachat Team";
                                                 } else if (bareAddress.startsWith("adminevent@")) {
                                                     nickName = mContext.getString(R.string.event_name);
                                                 } else {

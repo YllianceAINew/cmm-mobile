@@ -26,7 +26,7 @@ Checking a few more files to understand the project's functionality:
 
 ## Project Overview
 
-**ArirangChat** — Android multimedia chat app with messaging, voice, and video calling.
+**MultimediaChat** — Android multimedia chat app with messaging, voice, and video calling.
 
 ### Key Features
 
@@ -82,7 +82,7 @@ Checking a few more files to understand the project's functionality:
 - **Multiple architectures** supported (armeabi, armeabi-v7a)
 - **AIDL interfaces** for inter-process communication
 
-The app appears production-ready with a built APK (`ArirangChat1.0.apk`) in the release folder.
+The app appears production-ready with a built APK (`MultimediaChat1.0.apk`) in the release folder.
 
 ---
 
@@ -112,7 +112,7 @@ Creating a UI/UX improvement guide with a modern color palette and implementatio
 
 
 ```markdown
-# UI/UX Improvement Guide for ArirangChat
+# UI/UX Improvement Guide for MultimediaChat
 
 ## Overview
 This guide provides a comprehensive plan to modernize the UI/UX of your Android chat application with beautiful colors and Material Design principles.
@@ -12413,7 +12413,7 @@ android {
             variant.outputs.each { output ->
                 def relativeRootDir = output.packageApplication.outputDirectory.toPath()
                         .relativize(rootDir.toPath()).toFile()
-                output.outputFileName = new File("$relativeRootDir/release", "ArirangChat1.0.apk")
+                output.outputFileName = new File("$relativeRootDir/release", "MultimediaChat1.0.apk")
             }
         }
         release {

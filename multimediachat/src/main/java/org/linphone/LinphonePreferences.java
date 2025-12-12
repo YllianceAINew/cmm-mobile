@@ -338,7 +338,7 @@ public class LinphonePreferences {
 			lc.addAuthInfo(authInfo);
 
 //			if (!tempNoDefault)
-			if (!tempNoDefault && LinphonePreferences.instance().getAccountCount() == 1) //arirangchat
+			if (!tempNoDefault && LinphonePreferences.instance().getAccountCount() == 1) //multimediachat
 				lc.setDefaultProxyConfig(prxCfg);
 		}
 	}
