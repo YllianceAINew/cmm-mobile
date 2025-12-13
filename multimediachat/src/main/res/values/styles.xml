@@ -1,344 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    /*
+    * Copyright 2008, Google Inc.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+-->
+
+
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-    
-    <!-- ============================================ -->
-    <!-- MODERN THEME & STYLES -->
-    <!-- ============================================ -->
-    
-    <!-- Base Theme -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColorPrimary">@color/primary_text_color</item>
-        <item name="android:textColorSecondary">@color/secondary_text</item>
-        <item name="android:windowBackground">@color/ap_background_color</item>
-        <item name="android:textCursorDrawable">@drawable/text_cursor</item>
-        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
-        <item name="android:navigationBarColor">@color/white</item>
-    </style>
-    
-    <style name="FullScreen" parent="AppTheme">
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowNoTitle">true</item>
-    </style>
-    
-    <style name="NoTitle" parent="AppTheme">
-        <item name="android:windowNoTitle">true</item>
-    </style>
-    
-    <!-- ============================================ -->
-    <!-- TYPOGRAPHY SYSTEM -->
-    <!-- ============================================ -->
-    
-    <!-- Headlines -->
-    <style name="TextAppearance.Headline1">
-        <item name="android:textSize">32sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/primary_text_color</item>
-        <item name="android:letterSpacing">-0.02</item>
-    </style>
-    
-    <style name="TextAppearance.Headline2">
-        <item name="android:textSize">24sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/primary_text_color</item>
-        <item name="android:letterSpacing">-0.01</item>
-    </style>
-    
-    <style name="TextAppearance.Headline3">
-        <item name="android:textSize">20sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/primary_text_color</item>
-    </style>
-    
-    <!-- Body Text -->
-    <style name="TextAppearance.Body1">
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/primary_text_color</item>
-        <item name="android:lineSpacingMultiplier">1.4</item>
-    </style>
-    
-    <style name="TextAppearance.Body2">
-        <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/secondary_text</item>
-        <item name="android:lineSpacingMultiplier">1.4</item>
-    </style>
-    
-    <!-- Caption -->
-    <style name="TextAppearance.Caption">
-        <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/secondary_text</item>
-    </style>
-    
-    <!-- Button Text -->
-    <style name="TextAppearance.Button">
-        <item name="android:textSize">14sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:letterSpacing">0.1</item>
-    </style>
-    
-    <!-- ============================================ -->
-    <!-- BUTTON STYLES -->
-    <!-- ============================================ -->
-    
-    <style name="Widget.Button.Primary" parent="Widget.AppCompat.Button">
-        <item name="android:background">@drawable/btn_primary_background</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:paddingLeft">24dp</item>
-        <item name="android:paddingRight">24dp</item>
-        <item name="android:paddingTop">12dp</item>
-        <item name="android:paddingBottom">12dp</item>
-        <item name="android:minHeight">48dp</item>
-        <item name="android:elevation">2dp</item>
-    </style>
-    
-    <style name="Widget.Button.Secondary" parent="Widget.AppCompat.Button">
-        <item name="android:background">@drawable/btn_secondary_background</item>
-        <item name="android:textColor">@color/colorPrimary</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:paddingLeft">24dp</item>
-        <item name="android:paddingRight">24dp</item>
-        <item name="android:paddingTop">12dp</item>
-        <item name="android:paddingBottom">12dp</item>
-        <item name="android:minHeight">48dp</item>
-        <item name="android:elevation">0dp</item>
-    </style>
-    
-    <style name="Widget.Button.Text" parent="Widget.AppCompat.Button.Borderless">
-        <item name="android:textColor">@color/colorPrimary</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:paddingLeft">16dp</item>
-        <item name="android:paddingRight">16dp</item>
-        <item name="android:paddingTop">12dp</item>
-        <item name="android:paddingBottom">12dp</item>
-        <item name="android:minHeight">48dp</item>
-    </style>
-    
-    <!-- ============================================ -->
-    <!-- INPUT FIELD STYLES -->
-    <!-- ============================================ -->
-    
-    <style name="Widget.EditText.Modern">
-        <item name="android:background">@drawable/edittext_background</item>
-        <item name="android:textColor">@color/primary_text_color</item>
-        <item name="android:textColorHint">@color/hint_color</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:paddingLeft">16dp</item>
-        <item name="android:paddingRight">16dp</item>
-        <item name="android:paddingTop">12dp</item>
-        <item name="android:paddingBottom">12dp</item>
-        <item name="android:minHeight">48dp</item>
-    </style>
-    
-    <style name="editbox_search" parent="Widget.EditText.Modern">
-        <item name="android:drawableLeft">@drawable/cii_search</item>
-        <item name="android:drawablePadding">12dp</item>
-        <item name="android:paddingLeft">16dp</item>
-        <item name="android:paddingRight">16dp</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:imeOptions">actionSearch</item>
-    </style>
-    
-    <!-- ============================================ -->
-    <!-- CARD STYLES -->
-    <!-- ============================================ -->
-    
-    <style name="Widget.Card">
-        <item name="android:background">@drawable/card_background</item>
-        <item name="android:elevation">2dp</item>
-        <item name="android:layout_margin">8dp</item>
-        <item name="cardCornerRadius">12dp</item>
-        <item name="cardUseCompatPadding">true</item>
-    </style>
-    
-    <!-- ============================================ -->
-    <!-- DIALOG STYLES -->
-    <!-- ============================================ -->
-    
-    <style name="Theme.Dialog.Modern" parent="Theme.AppCompat.Light.Dialog">
-        <item name="android:windowBackground">@drawable/dialog_background</item>
-        <item name="android:windowMinWidthMajor">85%</item>
-        <item name="android:windowMinWidthMinor">85%</item>
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
-    
-    <style name="custom_dialog_theme" parent="Theme.Dialog.Modern">
+
+    <style name="custom_dialog_theme" parent="@android:style/Theme.Translucent">
         <item name="android:windowBackground">@color/dlg_trans_bg</item>
         <item name="android:windowIsFloating">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-    
-    <!-- ============================================ -->
-    <!-- PROGRESS BAR STYLES -->
-    <!-- ============================================ -->
-    
-    <style name="Widget.ProgressBar.Modern" parent="Widget.AppCompat.ProgressBar">
-        <item name="android:indeterminateTint">@color/colorPrimary</item>
-        <item name="android:progressTint">@color/colorPrimary</item>
-    </style>
-    
-    <style name="mediumCustomProgressBar" parent="Widget.ProgressBar.Modern">
+   	
+   	<style name="mediumCustomProgressBar" parent="@android:style/Widget.ProgressBar">
         <item name="android:indeterminateDrawable">@drawable/progress_medium_holo</item>
     </style>
     
-    <style name="largeCustomProgressBar" parent="Widget.ProgressBar.Modern">
+   	<style name="largeCustomProgressBar" parent="@android:style/Widget.ProgressBar.Large">
         <item name="android:indeterminateDrawable">@drawable/progress_large_holo</item>
     </style>
     
-    <!-- ============================================ -->
-    <!-- LEGACY FONT STYLES (Updated) -->
-    <!-- ============================================ -->
-    
-    <style name="font1" parent="TextAppearance.Headline2">
-        <item name="android:textColor">@color/colorPrimary</item>
-        <item name="android:textAllCaps">true</item>
-    </style>
-    
-    <style name="font2" parent="TextAppearance.Body1">
-        <item name="android:textColor">@color/colorPrimary</item>
-    </style>
-    
-    <style name="font3" parent="TextAppearance.Caption">
-        <item name="android:textColor">@color/colorPrimary</item>
-    </style>
-    
-    <style name="font4" parent="TextAppearance.Headline3">
-        <item name="android:textColor">@color/colorAccent</item>
-        <item name="android:textAllCaps">true</item>
-    </style>
-    
-    <style name="font5" parent="TextAppearance.Headline1">
-        <item name="android:textColor">@color/secondary_text</item>
-        <item name="android:textSize">30sp</item>
-    </style>
-    
-    <style name="font6" parent="TextAppearance.Headline3">
-        <item name="android:textColor">@color/secondary_text</item>
-        <item name="android:textSize">20sp</item>
-    </style>
-    
-    <style name="font7" parent="TextAppearance.Body1">
-        <item name="android:textColor">@color/secondary_text</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-    
-    <style name="font8" parent="TextAppearance.Body1">
-        <item name="android:textColor">@color/secondary_text</item>
-        <item name="android:textAllCaps">true</item>
-    </style>
-    
-    <style name="font9" parent="TextAppearance.Caption">
-        <item name="android:textColor">@color/secondary_text</item>
-    </style>
-    
-    <style name="font10" parent="TextAppearance.Body1">
-        <item name="android:textColor">@color/hint_color</item>
-    </style>
-    
-    <style name="font11" parent="TextAppearance.Body2">
-        <item name="android:textColor">@color/hint_color</item>
-    </style>
-    
-    <style name="font12" parent="TextAppearance.Body1">
-        <item name="android:textColor">@color/divider_gray_color</item>
-    </style>
-    
-    <style name="font13" parent="TextAppearance.Caption">
-        <item name="android:textColor">@color/divider_gray_color</item>
-    </style>
-    
-    <style name="font14" parent="TextAppearance.Headline2">
-        <item name="android:textColor">@color/white</item>
-    </style>
-    
-    <style name="font15" parent="TextAppearance.Body1">
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textAllCaps">true</item>
-    </style>
-    
-    <style name="font16" parent="TextAppearance.Body2">
-        <item name="android:textColor">@color/white</item>
-    </style>
-    
-    <style name="font17" parent="TextAppearance.Caption">
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-    
-    <style name="font18" parent="TextAppearance.Caption">
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">10sp</item>
-    </style>
-    
-    <style name="font19" parent="TextAppearance.Caption">
-        <item name="android:textColor">@color/hint_color</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAllCaps">true</item>
-    </style>
-    
-    <style name="font20" parent="TextAppearance.Body2">
-        <item name="android:textColor">@color/general_red_color</item>
-    </style>
-    
-    <style name="font21" parent="TextAppearance.Headline1">
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:textSize">50sp</item>
-    </style>
-    
-    <style name="font22" parent="TextAppearance.Headline2">
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-    
-    <style name="font23" parent="TextAppearance.Body1">
-        <item name="android:textColor">@color/hint_color</item>
-        <item name="android:textStyle">italic</item>
-    </style>
-    
-    <style name="font24" parent="TextAppearance.Caption">
-        <item name="android:textColor">@color/colorAccent</item>
-    </style>
-    
-    <style name="font25" parent="TextAppearance.Headline2">
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-    
-    <style name="font26" parent="TextAppearance.Headline1">
-        <item name="android:textColor">@color/general_red_color</item>
-        <item name="android:textSize">30sp</item>
-    </style>
-    
-    <style name="font27" parent="TextAppearance.Headline2">
-        <item name="android:textColor">@color/colorPrimary</item>
-        <item name="android:textSize">22sp</item>
-    </style>
-    
-    <style name="font28" parent="TextAppearance.Body1">
-        <item name="android:textColor">@color/colorPrimary</item>
-    </style>
-    
-    <!-- ============================================ -->
-    <!-- ANIMATIONS -->
-    <!-- ============================================ -->
-    
-    <style name="Animations" />
-    
+   	<style name="Animations" />
+
     <style name="Animations.PopDownMenu" />
-    
+
     <style name="Animations.PopDownMenu.Left">
         <item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
         <item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
@@ -348,44 +47,223 @@
         <item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
         <item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
     </style>
-    
-    <style name="Animations.PopDownMenu.Top">
-        <item name="@android:windowEnterAnimation">@anim/grow_from_top_to_bottom</item>
-        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom_to_top</item>
-    </style>
-    
+
+	<style name="Animations.PopDownMenu.Top">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_top_to_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottom_to_top</item>
+	</style>
+
     <style name="Animations.PopUpMenu" />
-    
     <style name="Animations.PopUpMenu.Left">
         <item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
         <item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
     </style>
-    
-    <style name="Animations.PopUpMenu.Right">
-        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
-        <item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
-    </style>
-    
+
+	<style name="Animations.PopUpMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+	</style>
+
     <style name="Animations.PopUpMenu.Slide" />
-    
     <style name="Animations.PopUpMenu.Slide.Right">
         <item name="@android:windowEnterAnimation">@anim/grow_from_right_to_left</item>
         <item name="@android:windowExitAnimation">@anim/shrink_from_left_to_right</item>
     </style>
-    
-    <!-- ============================================ -->
-    <!-- COMPONENT STYLES -->
-    <!-- ============================================ -->
-    
-    <style name="edittext_component">
-        <item name="android:paddingLeft">16dp</item>
-        <item name="android:paddingRight">16dp</item>
-    </style>
-    
-    <style name="search_bar_edit" parent="editbox_search">
-        <item name="android:background">@drawable/bg_primary_input</item>
-        <item name="android:drawableRight">@drawable/cii_search</item>
-    </style>
-    
-</resources>
 
+
+    <style name="Default" parent="android:Theme.Holo" />
+    <style name="NoTitle" parent="android:Theme.Holo.NoActionBar" />
+    <style name="FullScreen" parent="android:Theme.Holo.NoActionBar.Fullscreen" />
+
+    <style name="AppTheme" parent="@style/NoTitle">
+		<item name="android:textCursorDrawable">@drawable/text_cursor</item>
+    </style>
+
+    <!--Linphone-->
+	<style name="font1" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/colorA</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">24sp</item>
+	</style>
+
+	<style name="font2" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/colorA</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+
+	<style name="font3" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@color/colorA</item>
+		<item name="android:textSize">13sp</item>
+	</style>
+
+	<style name="font4" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/colorB</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">21sp</item>
+	</style>
+
+	<style name="font5" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/colorC</item>
+		<item name="android:textSize">30sp</item>
+	</style>
+
+	<style name="font6" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/colorC</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+
+	<style name="font7" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/colorC</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">18sp</item>
+	</style>
+
+	<style name="font8" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/colorC</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+
+	<style name="font9" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@color/colorC</item>
+		<item name="android:textSize">13sp</item>
+	</style>
+
+	<style name="font10" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/colorD</item>
+		<item name="android:textSize">18sp</item>
+	</style>
+
+	<style name="font11" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/colorD</item>
+		<item name="android:textSize">15sp</item>
+	</style>
+
+	<style name="font12" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@color/colorE</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+
+	<style name="font13" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/colorE</item>
+		<item name="android:textSize">13sp</item>
+	</style>
+
+	<style name="font14" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@color/colorH</item>
+		<item name="android:textSize">21sp</item>
+	</style>
+
+	<style name="font15" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@color/colorH</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+
+	<style name="font16" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@color/colorH</item>
+		<item name="android:textSize">15sp</item>
+	</style>
+
+	<style name="font17" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@color/colorH</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">13sp</item>
+	</style>
+
+	<style name="font18" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@color/colorH</item>
+		<item name="android:textSize">10sp</item>
+	</style>
+
+	<style name="font19" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/colorD</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:textSize">13sp</item>
+	</style>
+
+	<style name="font20" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@color/colorI</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+
+	<style name="font21" parent="@android:style/TextAppearance.Large">
+		<item name="android:textColor">@color/colorH</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:textSize">50sp</item>
+	</style>
+
+	<style name="font22" parent="@android:style/TextAppearance.Large">
+		<item name="android:textColor">@color/colorH</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">25sp</item>
+	</style>
+
+	<style name="font23" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/colorD</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:textStyle">italic</item>
+	</style>
+
+	<style name="font24" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@color/colorB</item>
+		<item name="android:textSize">13sp</item>
+	</style>
+
+	<style name="font25" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@color/colorH</item>
+		<item name="android:textSize">21sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="font26" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/colorI</item>
+		<item name="android:textSize">30sp</item>
+	</style>
+	<style name="font27" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/Bluecolor</item>
+		<item name="android:textSize">22dp</item>
+	</style>
+	<style name="font28" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/Bluecolor</item>
+		<item name="android:textSize">16dp</item>
+	</style>
+
+	<style name="editbox_search">
+		<item name="android:background">@drawable/edit_bg_oval</item>
+		<item name="android:drawableLeft">@drawable/cii_search</item>
+		<item name="android:drawablePadding">2dp</item>
+		<item name="android:textCursorDrawable">@null</item>
+		<item name="android:paddingBottom">@dimen/search_item_paddingBottom</item>
+		<item name="android:paddingLeft">10dp</item>
+		<item name="android:paddingRight">44dp</item>
+		<item name="android:paddingTop">@dimen/search_item_paddingTop</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:imeOptions">actionSearch</item>
+		<item name="android:textColor">@color/editbox_text_color</item>
+		<item name="android:textColorHint">@color/editbox_text_hintcolor</item>
+		<item name="android:textSize">@dimen/searchbar_input_text_size</item>
+	</style>
+
+	<style name="search_bar_edit">
+		<item name="android:background">@drawable/bg_primary_input</item>
+		<item name="android:drawableRight">@drawable/cii_search</item>
+		<item name="android:drawablePadding">2dp</item>
+		<item name="android:textCursorDrawable">@null</item>
+		<item name="android:paddingLeft">3dp</item>
+		<item name="android:paddingRight">3dp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:imeOptions">actionSearch</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textColorHint">@color/editbox_text_hintcolor</item>
+		<item name="android:textSize">@dimen/searchbar_input_text_size</item>
+	</style>
+
+	<style name="edittext_component">
+		<item name="android:paddingLeft">5dp</item>
+		<item name="android:paddingRight">32dp</item>
+	</style>
+</resources>

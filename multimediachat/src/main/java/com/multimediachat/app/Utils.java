@@ -98,6 +98,8 @@ public class Utils {
     }
 
     public static String getIMEI() {
+        return "AAAA";
+        /*
         TelephonyManager tm = (TelephonyManager) ImApp.getInstance().getSystemService(Context.TELEPHONY_SERVICE);
         // get IMEI
         String m_imei = tm.getDeviceId();
@@ -105,7 +107,7 @@ public class Utils {
         if (TextUtils.isEmpty(m_imei)) {
             m_imei = androidId;
         }
-        return m_imei;
+        return m_imei;*/
     }
 
     public static boolean isValidChatID(String str) {

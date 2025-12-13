@@ -5,3 +5,7 @@
 /.idea
 /.gradle
 1.src.iml
+android-async-http/android-async-http.iml~
+multimediachat/multimediachat.iml
+*.xml~
+multimediachat/src/main/java/com/multimediachat/app/im/provider/ImpsProvider.java~

@@ -28,6 +28,7 @@
     <dimen name="font_level_6">20.0sp</dimen>
     <dimen name="font_level_7">22.0sp</dimen>
     <dimen name="font_level_8">27.0sp</dimen>
+    <dimen name="chat_message_max_width">320dp</dimen>
 
     <!-- chat_room -->
     <dimen name="chat_sendbar_height">50dp</dimen>

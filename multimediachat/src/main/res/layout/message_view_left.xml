@@ -106,7 +106,7 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_toRightOf="@+id/lyt_profile"
-                android:maxWidth="75%"
+                android:maxWidth="@dimen/chat_message_max_width"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -116,7 +116,7 @@
                     android:background="@drawable/chat_from_item_bg"
                     android:minHeight="40dp"
                     android:orientation="horizontal"
-                    android:maxWidth="100%">
+                    android:maxWidth="@dimen/chat_message_max_width">
 
                     <TextView
                         android:id="@+id/message_text"
@@ -130,7 +130,7 @@
                         android:textColor="@color/message_left_text_color"
                         android:textSize="16sp"
                         android:lineSpacingMultiplier="1.2"
-                        android:maxWidth="100%" />
+                        android:maxWidth="@dimen/chat_message_max_width" />
 
                     <ImageView
                         android:id="@+id/call_icon"

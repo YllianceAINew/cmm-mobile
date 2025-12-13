@@ -48,12 +48,19 @@ import android.net.Uri;
 import android.os.ParcelFileDescriptor;
 import android.text.TextUtils;
 
-import net.sqlcipher.database.SQLiteDatabase;
-import net.sqlcipher.database.SQLiteException;
-import net.sqlcipher.database.SQLiteConstraintException;
-import net.sqlcipher.database.SQLiteDatabase.CursorFactory;
-import net.sqlcipher.database.SQLiteOpenHelper;
-import net.sqlcipher.database.SQLiteQueryBuilder;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.database.sqlite.SQLiteQueryBuilder;
+import android.database.sqlite.SQLiteConstraintException;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+
+//import net.sqlcipher.database.SQLiteDatabase;
+//import net.sqlcipher.database.SQLiteException;
+//import net.sqlcipher.database.SQLiteConstraintException;
+//import net.sqlcipher.database.SQLiteDatabase.CursorFactory;
+//import net.sqlcipher.database.SQLiteOpenHelper;
+//import net.sqlcipher.database.SQLiteQueryBuilder;
 
 import android.database.Cursor;
 import android.database.CursorWrapper;
@@ -265,13 +272,13 @@ public class ImpsProvider extends ContentProvider {
 
 		boolean mInMemoryDB = false;
 
-		public DatabaseHelper(Context context, String name, CursorFactory factory, int version) {
+		public DatabaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
 			super(context, name, factory, version);
 		}
 
 		public SQLiteDatabase getReadableDatabase() {
 			if (dbRead == null) {
-				dbRead = super.getReadableDatabase(password);
+				dbRead = super.getReadableDatabase();
 			}
 
 			return dbRead;
@@ -279,7 +286,7 @@ public class ImpsProvider extends ContentProvider {
 
 		public SQLiteDatabase getWritableDatabase() {
 			if (dbWrite == null) {
-				dbWrite = super.getWritableDatabase(mEncryptedPwd);
+				dbWrite = super.getWritableDatabase();
 			}
 			return dbWrite;
 		}
@@ -1190,7 +1197,7 @@ public class ImpsProvider extends ContentProvider {
 
 	@Override
 	public boolean onCreate() {
-		SQLiteDatabase.loadLibs(getContext());
+//		SQLiteDatabase.loadLibs(getContext());
 		setEncryptedPassword();
 		return true;
 	}
